@@ -7,7 +7,7 @@
 <style lang="scss">
   footer {
     p {
-    font-size: 1.5vw
+    font-size: 0.75em
     }
   }
 </style>
