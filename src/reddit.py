@@ -30,7 +30,7 @@ def download_submissions(sub: str, q: str, start: int, end: int):
     return df
 
 if __name__ == '__main__':
-    log.configure(os.path.join("local_data", "download.log"), "Download Reddit data")
+    log.configure(os.path.join("local_data", "download_reddit.log"), "Download Reddit data")
 
     sub, q = "videos", "YouTube"
     start_date, end_date = int(dt.datetime(2016, 1, 1).timestamp()), int(dt.datetime(2021, 1, 1).timestamp())
