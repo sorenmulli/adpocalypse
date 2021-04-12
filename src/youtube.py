@@ -14,7 +14,7 @@ def download_comments(yt: YouTube):
         log(c["snippet"]["topLevelComment"]["snippet"]["textOriginal"])
 
 if __name__ == '__main__':
-    log.configure(os.path.join("local_data", "download_yt.log"), "Download Reddit data")
+    log.configure(os.path.join("local_data", "download_yt.log"), "Download YouTube data")
     with open("secret", "r") as s:
         key = s.readlines()[0]
     yt = YouTube(key)

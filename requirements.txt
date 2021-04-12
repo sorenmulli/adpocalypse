@@ -1,0 +1,4 @@
+socialreaper
+pandas
+psaw
+pelutils[ds]>=0.5.6
