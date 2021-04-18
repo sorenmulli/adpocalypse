@@ -23,9 +23,9 @@ if __name__ == '__main__':
     datapath = "data"
     localdatapath = "local_data"
 
-    df = pd.read_csv(os.path.join(datapath, "asoiaf_data.csv"), header=0)
+    df = pd.read_csv(os.path.join(datapath, "asoiaf_data.csv"), header=0, index_col = 0)
     df["names"] = df.apply(lambda r: eval(r["names"]), axis=1)
 
     G = character_graph(df["names"])
     print("Saving graph to file ...")
-    nx.write_gpickle(G, os.path.join(datapath, "book_char_graph.nxgraph"))
+    nx.write_gpickle(G, os.path.join(datapath, "asoiaf_graph.nxgraph"))
