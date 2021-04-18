@@ -19,12 +19,19 @@ The social graph from the book has an average degree of 30, while it is 33 for t
 Therefore there are no dramtic differences between the degree distribution of the two graphs. <br><br>
 
 
-### What do we do from here?
+### Where do we go from here?
   
-3. Now, we really want to understand the differences in the character relations.
+Now, we really want to understand the differences in the character relations.
+
 The data gives us many options here:
-First of all, from where do the degree distribution difference come?
-But also; are the communities the same in both graphs - and do these communities correspond to the factions in the story?
-The opportunities for analysis using natural language processing are plentiful.
+
+First of all, we weight the links by number of co-mentions and we want to understand the differences in the weight distributions between the two domains.
+
+The next step is to find communities in these social graphs.
+Are they the same in both graphs - and does community detection reveal the factions we know from the world?
+
+The opportunities for analysis using natural language processing on both the book texts and reddit selftexts are plentiful.
+
 We want to use this to explain the causes of graph differences and visualize the character personalitites using word clouds and frequency diagrams.
-Ultimately, we hope this can give us an insight into how fandoms treat fantasy universes -- while also having some fun with this bloody fantasy world of intrigues and dragons.
+
+Ultimately, we hope this can give us an insight into how fandoms treat fantasy universes -- while also having some fun with this bloody world of intrigues and dragons.
