@@ -11,12 +11,13 @@ Apart from satisfying the redditor neckbeard nerds, this analysis can explore wh
 ### Size and origins of social graphs
 
 2. This will be possible using two social graphs; one constructed using the ebook text from the five books and one constructed using posts on the r/asoiaf subreddit downloaded using PushShift. <br><br>
-The 5 books take up 10 MB consisting of 658 chapters totalling about 2M words. <br><br>
-From reddit, we have collected 100MB data in 70k submissions posted before the release of season 8 which give us a corpus of 15M words. <br><br>
-For both graphs, the 34 nodes correspond to characters.  <br><br>
-In the book graph, we link them if two characters are mentioned in the same chapter giving us 505 links and on reddit, we do so if characters are mentioned in the same post which ends up up in 561 links. <br><br>
-The initial degree distributions show no  dramatic difference: <br>
-For the book graph the average degree is 30, while it is 33 in the Reddit graph.
+The 5 books consist of 368 chapters which takes up 10 MB space and totals around 2M words. <br><br>
+From reddit, we have collected 100MB data from 70k submissions posted before the release of season 8 which give us a corpus of 15M words. <br><br>
+For both graphs, the 34 nodes correspond to each characters.  <br><br>
+In the book graph, we link them if two characters are mentioned in the same chapter giving us 505 links <br><br> And in the reddit graph, they are linked if characters are mentioned in the same post which ends up up in 561 links. <br><br>
+The social graph from the book has an average degree of 30, while it is 33 for the Reddit graph.
+Therefore there are no dramtic differences between the degree distribution of the two graphs. <br><br>
+
 
 ### What do we do from here?
   
