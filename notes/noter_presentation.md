@@ -9,7 +9,7 @@ Apart from satisfying the redditor neckbeard nerds, this analysis can explore wh
 
 2. This will be possible using two social graphs; one constructed using the ebook text from the five books and one constructed using posts on the r/asoiaf subreddit downloaded using PushShift.
 The books take up 10 MB consisting of 658 chapters totalling about 2M words.
-From reddit, we have collected 100MB data in NIGGAK submissions posted between the releases of season 7 and season 8 that give us a corpus of NIGGA words.
+From reddit, we have collected 100MB data in 70k submissions posted between the releases of season 7 and season 8 that give us a corpus of 15M words.
 For both graphs, the 34 nodes correspond to characters.
 In the book graph, we link them if two characters are mentioned in the same chapter giving us 505 links and on reddit, we do so if characters are mentioned in the same post which ends up up in 561 links.
 The initial degree distributions show only a slight difference:
