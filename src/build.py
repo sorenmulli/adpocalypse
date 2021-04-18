@@ -17,9 +17,9 @@ def find_names(doc: str, name_db: dict[str, list[str]]) -> list[str]:
     Characters are returned as full names and not as they were found.
     """
     out = list()
-    for name, keys in name_db.items():
-        for k in keys:
-            if k in doc:
+    for w in doc.lower().split():
+        for name, keys in name_db.items():
+            if any(k.lower() == w for k in keys):
                 out.append(name)
                 break
     return out
