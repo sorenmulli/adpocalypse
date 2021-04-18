@@ -1,7 +1,7 @@
 import os
 from collections import defaultdict
 import itertools
-
+from __future__ import annotations
 import networkx as nx
 import pandas as pd
 
