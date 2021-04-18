@@ -20,8 +20,10 @@ For the book graph the average degree is 30, while it is 33 in the Reddit graph.
 
 ### What do we do from here?
   
-1. Now, we really want to know what the differences are in the character relations.
-From where do the degree distribution difference come?
-Are the communities the same in both graphs - and do these communities correspond to the factions in the story?
+3. Now, we really want to understand the differences in the character relations.
+The data gives us many options here:
+First of all, from where do the degree distribution difference come?
+But also; are the communities the same in both graphs - and do these communities correspond to the factions in the story?
 The opportunities for analysis using natural language processing are plentiful.
 We want to use this to explain the causes of graph differences and visualize the character personalitites using word clouds and frequency diagrams.
+Ultimately, we hope this can give us an insight into how fandoms treat fantasy universes -- while also having some fun with this bloody fantasy world of intrigues and dragons.
