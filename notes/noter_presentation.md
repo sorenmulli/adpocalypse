@@ -4,9 +4,9 @@
 
 1. Welcome to the world of game of thrones; where the characters are plentiful and complicated, and the shock value is more for show than for actual character development. If season 8 has taught us anything, it is that for the show to be any good, we have to write it ourselves. 
 <br>
-To do so, it would help to have a good understanding of how the most important characters in the books interact with and relate to each other.
+To do so, it would help to have a good understanding of how the most important characters in the books interact with and relate to each other. We do this by creating one social graph from the books and one from reddit data.
 <br>
-Apart from satisfying the redditor neckbeard nerds, this analysis can explore whether the social graph of fictive worlds is the same in the minds of the fans as it is in the original work.
+Apart from satisfying the redditor neckbeard nerds, this analysis can explore whether the social structure of fictive worlds is the same in the minds of the fans as it is in the original work.
 
 ### Size and origins of social graphs
 
