@@ -28,4 +28,4 @@ if __name__ == '__main__':
 
     G = character_graph(df["names"])
     print("Saving graph to file ...")
-    nx.write_gpickle(G, os.path.join(datapath, "book_char_graph.nxgraph"))
+    nx.write_gpickle(G, os.path.join(datapath, "asoiaf_graph.nxgraph"))
