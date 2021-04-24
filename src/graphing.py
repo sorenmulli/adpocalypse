@@ -15,17 +15,21 @@ def character_graph(name_lists: list[str]) -> nx.Graph:
             # Make sure that there is not a difference between (Ned, Sansa) and (Sansa, Ned)
             edge = tuple(sorted(edge))
             edges[edge] += 1
+    max_w = max(edges.values())
     G = nx.Graph()
-    G.add_weighted_edges_from(((*e, w) for e, w in edges.items()), weight="weight")
+    G.add_weighted_edges_from(((*e, w/max_w) for e, w in edges.items()), weight="weight")
     return G
 
 if __name__ == '__main__':
+    # dataset = "asoiaf_data_cleaned"
+    dataset = "book"
+
     datapath = "data"
     localdatapath = "local_data"
 
-    df = pd.read_csv(os.path.join(localdatapath, "asoiaf_data_cleaned.csv"), header=0, index_col = 0)
+    df = pd.read_csv(os.path.join(localdatapath, f"{dataset}.csv"), header=0, index_col = 0)
     df["names"] = df.apply(lambda r: eval(r["names"]), axis=1)
 
     G = character_graph(df["names"])
     print("Saving graph to file ...")
-    nx.write_gpickle(G, os.path.join(datapath, "asoiaf_graph_cleaned.nxgraph"))
+    nx.write_gpickle(G, os.path.join(datapath, f"{dataset}.nxgraph"))

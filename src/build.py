@@ -1,6 +1,8 @@
 from __future__ import annotations
+import re
 import os
 import json
+
 
 
 def get_names(path: str = "data") -> dict[str, list[str]]:
@@ -14,15 +16,16 @@ def get_names(path: str = "data") -> dict[str, list[str]]:
 def find_names(doc: str, name_db: dict[str, list[str]]) -> list[str]:
     """
     Returns a list of all characters that were present in the document.
-    Characters are returned as full names and not as they were found.
+    Characters are returned as full names; not as they were found.
     """
-    out = list()
+    out = set()
     for w in doc.lower().split():
+        w = re.sub(r"[^a-z]", "", w) # Remove all non-alphabetical
         for name, keys in name_db.items():
             if any(k.lower() == w for k in keys):
-                out.append(name)
+                out.add(name)
                 break
-    return out
+    return list(out)
 
 if __name__ == '__main__':
     name_db = get_names()

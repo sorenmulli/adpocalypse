@@ -58,7 +58,7 @@ if __name__ == '__main__':
     chapter_df = build_df(books)
     chapter_df = mentioned_chars(chapter_df)
 
-    chapter_df.to_csv(os.path.join(datapath, "chapters.csv"))
+    chapter_df.to_csv(os.path.join(datapath, "book.csv"))
     print(chapter_df.head())
     print(chapter_df.tail(), "\n")
     print(chapter_df.describe())
