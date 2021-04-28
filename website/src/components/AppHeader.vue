@@ -1,7 +1,7 @@
 <template>
     <header>
-    <img alt="Sad YT" src="../assets/sad.png" height="50">
-    <p>Graph of Thrones</p>
+    <img alt="Graph Of Thrones" src="https://fontmeme.com/permalink/210428/7464690d81ebde4bf9006cfe4deedb23.png" height="50">
+    <p>A Song of Ice and Network Science</p>
     <nav>
       <ul>
         <li><router-link to="/">Home</router-link></li>

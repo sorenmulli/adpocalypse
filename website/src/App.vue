@@ -1,4 +1,7 @@
 <template>
+  <metainfo>
+    <template v-slot:title="{ content }">{{ content ? `${content} | A Graph of Thrones` : `A Graph of Thrones` }}</template>
+  </metainfo>
   <app-header />
   <router-view/>
   <app-footer />
@@ -7,11 +10,19 @@
 <script>
 import AppHeader from '@/components/AppHeader.vue'
 import AppFooter from '@/components/AppFooter.vue'
+import { useMeta } from 'vue-meta'
 
 export default {
   components: {
     AppHeader,
     AppFooter
+  },
+  // eslint-disable-next-line
+  setup () {
+    useMeta({
+      title: '',
+      htmlAttrs: { lang: 'en' }
+    })
   }
 }
 </script>
