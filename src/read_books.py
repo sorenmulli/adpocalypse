@@ -2,7 +2,7 @@ import os
 
 import pandas as pd
 
-from build import get_names, find_names
+from .build import get_names, find_names
 
 BOOK_PATHS = [
     "book1.txt",
@@ -46,9 +46,9 @@ def build_df(books: list[str]) -> pd.DataFrame:
     chapters[-1].pop("lines")
     return pd.DataFrame(chapters)
 
-def mentioned_chars(df: pd.DataFrame) -> pd.DataFrame:
+def mentioned_chars(df: pd.DataFrame, text_col="text") -> pd.DataFrame:
     names = get_names()
-    row_name_finder = lambda row: find_names(row["text"], names)
+    row_name_finder = lambda row: find_names(row[text_col], names)
     df["names"] = df.apply(row_name_finder, axis=1)
     return df
 

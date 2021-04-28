@@ -13,8 +13,9 @@ def character_graph(name_lists: list[str]) -> nx.Graph:
     for L in name_lists:
         for edge in itertools.combinations(L, r=2): # All pairs of characters
             # Make sure that there is not a difference between (Ned, Sansa) and (Sansa, Ned)
-            edge = tuple(sorted(edge))
-            edges[edge] += 1
+            if edge[0] != edge[1]:
+                edge = tuple(sorted(edge))
+                edges[edge] += 1
     max_w = len(name_lists)
     G = nx.Graph()
     G.add_weighted_edges_from(((*e, w/max_w) for e, w in edges.items()), weight="weight")
