@@ -1,0 +1,10 @@
+{
+    "Stark": "grey",
+    "Baratheon": "yellow",
+    "Lannister": "orange",
+    "Targaryan": "red",
+    "Tyrell": "green",
+    "Night's Watch": "black",
+    "Greyjoy": "brown",
+    "Other": "white"
+}

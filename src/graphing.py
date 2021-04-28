@@ -2,8 +2,20 @@ from __future__ import annotations
 import os
 from collections import defaultdict
 import itertools
+import json
+
 import networkx as nx
 import pandas as pd
+
+def colour_graph(G: nx.Graph, path: str="data") -> nx.Graph:
+    with open(os.path.join(path, "character_factions.json")) as f:
+        char_facts = json.load(f)
+    with open(os.path.join(path, "faction_colours.json")) as f:
+        cols = json.load(f)
+    nx.set_node_attributes(G, {c: char_facts[c] for c in G.nodes()}, "faction")
+    nx.set_node_attributes(G, {c: cols[char_facts[c]] for c in G.nodes()}, "colour")
+    return G
+
 
 def character_graph(name_lists: list[str]) -> nx.Graph:
     """
@@ -19,6 +31,8 @@ def character_graph(name_lists: list[str]) -> nx.Graph:
     max_w = len(name_lists)
     G = nx.Graph()
     G.add_weighted_edges_from(((*e, w/max_w) for e, w in edges.items()), weight="weight")
+
+    G = colour_graph(G)
     return G
 
 if __name__ == '__main__':
