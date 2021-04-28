@@ -1,7 +1,7 @@
 <template>
     <header>
     <img alt="Sad YT" src="../assets/sad.png" height="50">
-    <p>Studying the Adpocalypse</p>
+    <p>Graph of Thrones</p>
     <nav>
       <ul>
         <li><router-link to="/">Home</router-link></li>
