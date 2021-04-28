@@ -21,8 +21,8 @@ def character_graph(name_lists: list[str]) -> nx.Graph:
     return G
 
 if __name__ == '__main__':
-    # dataset = "asoiaf_data_cleaned"
-    dataset = "book"
+    dataset = "asoiaf_data_cleaned"
+    # dataset = "book"
 
     datapath = "data"
     localdatapath = "local_data"
