@@ -9,7 +9,7 @@
     </p>
    </div>
     <!--Guessing game-->
-    <h2> Guess characters from Reddit discussion word clouds  </h2>
+    <h3> Guess characters from Reddit discussion word clouds  </h3>
     <div v-if="started">
         <form @submit.prevent="submit">
             <div>
@@ -31,6 +31,12 @@
   <div v-else>
     <p> Do you think you know the characters? See if you can recognize them in the reader discussions!</p>
     <button type="button" @click="start">Start guessing</button>
+  </div>
+  <!--Video-->
+  <div>
+    <h3> Introductionary video </h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NAvDzTBnw3s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
   </div>
 </template>
 
@@ -59,7 +65,6 @@ export default defineComponent({
       this.started = true
     },
     submit () {
-      console.log(this.selected)
       this.resultMsg = this.selected === this.rightAnswer ? 'You got that one right!' : 'Nope, try another'
     }
   }
