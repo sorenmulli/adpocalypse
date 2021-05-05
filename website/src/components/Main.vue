@@ -8,6 +8,8 @@
         Here's what we found!
     </p>
 
+    <h3>Data!</h3>
+
     <h3>What are we looking for?</h3>
     <div align="left">
       <p>
@@ -49,7 +51,6 @@
     </p>
     </div>
 
-    <h3>Data!</h3>
    </div>
 </template>
 
