@@ -153,43 +153,19 @@
              <br>
              <b>Word Cloud</b>
              <br> Word clouds are visual representations of text. In the case of this project we've used Word Clouds to illustrate
-              the TF-IDF words specified to each character in Game of Thrones. To analyze how the characters are perceived by the author
-              of the book compared to the subreddit we have constructed a word cloud based on reddit posts and the book series itself. These word clouds
-              are illustrated for Jon Snow, Tywin Lannister and Daenerys Targaryen.
+              the most frequest words specified to each character in Game of Thrones both from reddit and from the books.
+              The following three word clouds represents Daenerys Targaryen, Tywin Lannister and Jon Snow.
         </p>
-        <h3 align="center">Fig. 1 - Word Cloud for Daenerys Targaryen </h3>
-        <div align="center">
-        </div>
-         <div align="center" id="div_1">
-            <figure>
-            <img src="../assets/dany_word_book.png" width=900>
-            <img src="../assets/dany_word_red.png" width=900>
-            <figcaption> </figcaption>
-            </figure>
-        </div>
-        <h3 align="center">Fig. 2 - Word Cloud for Tywin Lannister </h3>
-        <div align="center">
-        </div>
-         <div align="center" id="div_2">
-            <figure>
-            <img src="../assets/dany_word_book.png" width=900>
-            <img src="../assets/dany_word_red.png" width=900>
-            <figcaption> </figcaption>
-            </figure>
-        </div>
-        <h3 align="center">Fig. 3 - Word Cloud for Jon Snow </h3>
-        <div align="center">
-        </div>
-         <div align="center" id="div_2">
-            <figure>
-            <img src="../assets/dany_word_book.png" width=900>
-            <img src="../assets/dany_word_red.png" width=900>
-            <figcaption> </figcaption>
-            </figure>
+        <div class="crop" align="right" id=div_1>
+            <img src="../assets/dany_TF_wordcloud.png">
+          <!--  <img src="../assets/dany_TF_wordcloud.png">
+            <img src="../assets/tywin_TF_wordcloud.png">
+            <img src="../assets/tywin_TF_wordcloud.png">
+            <img src="../assets/jon_TF_wordcloud.png">
+            <img src="../assets/jon_TF_wordcloud.png">-->
         </div>
     </div>
-
-   </div>
+</div>
 </template>
 
 <script lang="ts">
@@ -202,28 +178,16 @@ export default defineComponent({
   }
 })
 </script>
-
 <style lang="scss">
-#div_1 {
-  position: relative;
-  bottom: 210px;
-  top: -210px;
-}
-#div_2 {
-  position: relative;
-  bottom: 218px;
-}
-#div_2 img {
-  width: 50%;
-}
-#div_1 img {
-  width: 50%;
-}
-figcaption {
-    font-style: bold;
-    padding: -88px;
-    text-align: center;
-    caption-side: top;
-    height: -20px;
-}
+ .crop {
+        width: 660px;
+        height: 250px;
+        overflow: hidden;
+    }
+
+    .crop img {
+        width: 380px;
+        height: 300px;
+        margin: -75px 0 0 -100px;
+    }
 </style>
