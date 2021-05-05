@@ -84,10 +84,10 @@
     </p>
     <p>
         This means that weights are in general <b>much</b> smaller in the discussion data:
-        The readers talk about a large number of different character pairs -- it not just <em>all</em> the attractive pair Jon and Dany (those two fiery fighters <em>do</em> outperform the mean quite a bit by occuring in 8% of all discussions)
+        The readers talk about a large number of different character pairs -- it not just <em>all</em> the attractive pair Jon and Dany (those two fiery fighters <em>do</em> outperform the mean quite a bit by occurring in 8% of all discussions)
     </p>
     <p>
-        When we plotthe proportions for the entire list of characters (Fig. 3), we realize why the means are so different:
+        When we plot the proportions for the entire list of characters (Fig. 3), we realize why the means are so different:
         In the actual story, there are some characters that meet quite rarely, many sometimes see each or discuss other and some are together in most chapters, but the (green) line between these is mostly uniform.
         In the discussions, however, most character pairs very rarely are discussed together with a small number of much more popular outliers such as Jon and Dany or Jon and Tyrion ... or Jon and Bran - you get the picture!
     </p>
@@ -102,19 +102,13 @@
     </div>
     <div align="left">
     <p>
-        But wait, there's more! We have two more numbers that can tell you a lot about any graph.
+      This is not the only finger print of such social graphs:
+      We also measure how often a character's friends are also friends themselves.
+      Compared to the mean connection strengths, these <em>clusterings</em> of the two graphs are much closer together, implying that there are also closely-knitted groupings of characters in the Reddit graph.
     </p>
     <p>
-        <!---TODO: Kommet hertil i gennemretning-->
-        The first one is the average shortest path.
-        The average shortest path expresses how far you can expect to travel between any two locations in a network.
-        As such, a larger average shortest path means that you will need to pack hiking shoes instead of crocs.
-        The average shortest path of the book graph is a hundred times
-
-        0.0122 and it is 0.0011 for the reddit graph.
-    </p>
-    <p>
-        The other interesting number is the average clustering. The average clustering of a network says something about how clumped together nodes are in general in a network. As such, a larger average clustering of buildings in a city means that you are more likely to be in Osaka, Japan than Roskilde, Denmark. The average clustering is 0.1600 for the book graph and 0.0811 for the reddit graph. This means that the nodes of the book graph are generally more clumped together.
+      When considering how strong the links between any two characters are, by considering longest paths, we see the same not quite clear picture:
+      It is easier to find characters that often occur between
     </p>
     <p>
     </p>
