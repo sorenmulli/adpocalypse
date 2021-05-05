@@ -40,6 +40,11 @@
         Now, let's <b>build a graph</b> for each of the two worlds of text!
       </p>
     </div>
+    <div align="center">
+      <img src="../assets/book_graph.png">
+      <br>
+      <img src="../assets/reddit_graph.png">
+    </div>
 
     <h3>What is revealed?</h3>
     <div align="left">
@@ -54,7 +59,6 @@
     </p>
     <div align="center">
         <img src="../assets/communities_book.png">
-        <img src="../assets/communities_true_book.png">
         <br>
         <img src="../assets/communities_reddit.png">
         <img src="../assets/communities_true_reddit.png">
