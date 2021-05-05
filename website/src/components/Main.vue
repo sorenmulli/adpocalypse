@@ -71,9 +71,25 @@
         There are also some links that are much clearer in the Reddit data: Here, we see a triangle of Daenarys, Tyrion and Jon Snow not seen in the book graph.
         These are three characters that are spatially far away from eachother in most of the story, but might be much more adjacent in space of Reddit discussions dealing with possible endings, wild theories and favorite characters.
     </p>
-    <br>
     <p>
-        Instead of only looking at what the graphs <b>look</b> like, we also want to look at some numbers. The average weight of links -how strong the connection is between characters- for charcters in the books is 7.49 and the standard deviation is 7.87. For the reddit graph, these values are instead 0.67 and 0.79. This means that weights are in general <b>much</b> smaller in the reddit data, which makes sense since we divide by the total number of possible occurrences. Unsurprisingly, this sentiment is shared by the plot below!
+       While interesting, we want to go beyond this qualitative zoom in on local graph differences and look for a way to <em>measure</em> what the difference is.
+    </p>
+    </div>
+    <h3>What is revealed?</h3>
+    <div align="left">
+    <p>
+        The easiest numbers we can look at are the strengths of the links.
+        The average weight of links - how often the characters occur in same chapter of post - is, in the books, is 7% and varies about 8% away for this typical value.
+        For the reddit graph, these values are very different: 0.7% is the average strength and it varies typically 0.8%.
+    </p>
+    <p>
+        This means that weights are in general <b>much</b> smaller in the discussion data:
+        The readers talk about a large number of different character pairs -- it not just <em>all</em> the attractive pair Jon and Dany (those two fiery fighters <em>do</em> outperform the mean quite a bit by occuring in 8% of all discussions)
+    </p>
+    <p>
+        When we plotthe proportions for the entire list of characters (Fig. 3), we realize why the means are so different:
+        In the actual story, there are some characters that meet quite rarely, many sometimes see each or discuss other and some are together in most chapters, but the (green) line between these is mostly uniform.
+        In the discussions, however, most character pairs very rarely are discussed together with a small number of much more popular outliers such as Jon and Dany or Jon and Tyrion ... or Jon and Bran - you get the picture!
     </p>
     </div>
     <div align="center">
@@ -89,17 +105,21 @@
         But wait, there's more! We have two more numbers that can tell you a lot about any graph.
     </p>
     <p>
-        The first one is the average shortest path. The average shortest path expresses how far you can expect to travel between any two locations in a network. As such, a larger average shortest path means that you will need to pack hiking shoes instead of crocs. The average shortest path of the book graph is 0.0122 and it is 0.0011 for the reddit graph. This shows that it is generally easier to get around in the reddit graph.
+        <!---TODO: Kommet hertil i gennemretning-->
+        The first one is the average shortest path.
+        The average shortest path expresses how far you can expect to travel between any two locations in a network.
+        As such, a larger average shortest path means that you will need to pack hiking shoes instead of crocs.
+        The average shortest path of the book graph is a hundred times
+
+        0.0122 and it is 0.0011 for the reddit graph.
     </p>
     <p>
         The other interesting number is the average clustering. The average clustering of a network says something about how clumped together nodes are in general in a network. As such, a larger average clustering of buildings in a city means that you are more likely to be in Osaka, Japan than Roskilde, Denmark. The average clustering is 0.1600 for the book graph and 0.0811 for the reddit graph. This means that the nodes of the book graph are generally more clumped together.
     </p>
     <p>
-        Besides all of this, while interesting, we want to go beyond this qualitative zoom in on local graph differences and look for a way to <em>measure</em> what the difference is.
     </p>
     </div>
 
-    <h3>What is revealed?</h3>
     <div align="left">
     <p>
         <b>The communties</b> of the two graphs are found by answering the question:
@@ -113,7 +133,7 @@
     <div align="center">
       <figure>
         <a :href="require('../assets/communities.png')" target="_blank">
-            <img src="../assets/communities.png" width=900>
+            <img src="../assets/communities.png" width=1200>
         </a>
       <figcaption>
         Fig. 4 -
