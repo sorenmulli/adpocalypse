@@ -45,7 +45,8 @@
         <a :href="require('../assets/book_graph.png')" target="_blank">
             <img src="../assets/book_graph.png" width=900>
         </a>
-        <figcaption>Fig. 1 - The graph of character relationships in the books:
+        <figcaption>
+        Fig. 1 - The graph of character relationships in the books:
         We strengthen the link between two characters every time they appear in the same chapter. (Click image for larger) </figcaption>
       </figure>
       <br>
@@ -53,10 +54,11 @@
         <a :href="require('../assets/reddit_graph.png')" target="_blank">
             <img src="../assets/reddit_graph.png" width=900>
         </a>
-      </figure>
-        <figcaption>Fig. 2 - The graph of character relationships in the reddit data:
+        <figcaption>
+        Fig. 2 - The graph of character relationships in the reddit data:
         Here, we make the links stronger for each reddit discussion post that mention both characters (Click image for larger)
         </figcaption>
+      </figure>
     </div>
     <div align="left">
     <p>
