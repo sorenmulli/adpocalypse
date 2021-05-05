@@ -71,8 +71,31 @@
         There are also some links that are much clearer in the Reddit data: Here, we see a triangle of Daenarys, Tyrion and Jon Snow not seen in the book graph.
         These are three characters that are spatially far away from eachother in most of the story, but might be much more adjacent in space of Reddit discussions dealing with possible endings, wild theories and favorite characters.
     </p>
+    <br>
     <p>
-      While interesting, we want to go beyond this qualitative zoom in on local graph differences and look for a way to <em>measure</em> what the difference is.
+        Instead of only looking at what the graphs <b>look</b> like, we also want to look at some numbers. The average weight of links -how strong the connection is between characters- for charcters in the books is 7.49 and the standard deviation is 7.87. For the reddit graph, these values are instead 0.67 and 0.79. This means that weights are in general <b>much</b> smaller in the reddit data, which makes sense since we divide by the total number of possible occurrences. Unsurprisingly, this sentiment is shared by the plot below!
+    </p>
+    </div>
+    <div align="center">
+          <figure>
+        <a :href="require('../assets/comention_dist.png')" target="_blank">
+            <img src="../assets/comention_dist.png" width=900>
+        </a>
+        <figcaption>Fig. 3 - The graph of how the strength of links is distributed: we see that most of the links are very weak. (Click image for larger) </figcaption>
+    </figure>
+    </div>
+    <div align="left">
+    <p>
+        But wait, there's more! We have two more numbers that can tell you a lot about any graph.
+    </p>
+    <p>
+        The first one is the average shortest path. The average shortest path expresses how far you can expect to travel between any two locations in a network. As such, a larger average shortest path means that you will need to pack hiking shoes instead of crocs. The average shortest path of the book graph is 0.0122 and it is 0.0011 for the reddit graph. This shows that it is generally easier to get around in the reddit graph.
+    </p>
+    <p>
+        The other interesting number is the average clustering. The average clustering of a network says something about how clumped together nodes are in general in a network. As such, a larger average clustering of buildings in a city means that you are more likely to be in Osaka, Japan than Roskilde, Denmark. The average clustering is 0.1600 for the book graph and 0.0811 for the reddit graph. This means that the nodes of the book graph are generally more clumped together.
+    </p>
+    <p>
+        Besides all of this, while interesting, we want to go beyond this qualitative zoom in on local graph differences and look for a way to <em>measure</em> what the difference is.
     </p>
     </div>
 
