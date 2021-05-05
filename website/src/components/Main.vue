@@ -43,7 +43,7 @@
     <div align="center">
       <figure>
         <a :href="require('../assets/book_graph.png')" target="_blank">
-            <img src="../assets/book_graph.png" width="900">
+            <img src="../assets/book_graph.png" width=900>
         </a>
         <figcaption>Fig. 1 - The graph of character relationships in the books:
         We strengthen the link between two characters every time they appear in the same chapter. (Click image for larger) </figcaption>
@@ -51,12 +51,27 @@
       <br>
       <figure>
         <a :href="require('../assets/reddit_graph.png')" target="_blank">
-            <img src="../assets/reddit_graph.png" width="900">
+            <img src="../assets/reddit_graph.png" width=900>
         </a>
       </figure>
         <figcaption>Fig. 2 - The graph of character relationships in the reddit data:
         Here, we make the links stronger for each reddit discussion post that mention both characters (Click image for larger)
         </figcaption>
+    </div>
+    <div align="left">
+    <p>
+        Hey! There is definitely a difference between these two graphs.
+    </p>
+    <p>
+        Certain characters such as Jon Snow and Tyrion Lannister are much more prominent in the Reddit texts, while the characters that are more important early on in the story such as Ned Stark, Robb Stark and Robert Baratheon have faded more from the discussions.
+    </p>
+    <p>
+        There are also some links that are much clearer in the Reddit data: Here, we see a triangle of Daenarys, Tyrion and Jon Snow not seen in the book graph.
+        These are three characters that are spatially far away from eachother in most of the story, but might be much more adjacent in space of Reddit discussions dealing with possible endings, wild theories and favorite characters.
+    </p>
+    <p>
+      While interesting, we want to go beyond this qualitative zoom in on local graph differences and look for a way to <em>measure</em> what the difference is.
+    </p>
     </div>
 
     <h3>What is revealed?</h3>
