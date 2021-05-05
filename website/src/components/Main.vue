@@ -178,10 +178,10 @@
         </p>
         <div class="row" align="center">
             <div class="column" align="center">
-                <img class="crop-height" src="../assets/dany_TF_wordcloud.png">
+                <img class="crop-height" src="../assets/dany_TF_wordcloud.png" width=550>
             </div>
             <div class="column" align="center">
-                <img class="crop-height" src="../assets/dany_TF_book.png">
+                <img class="crop-height" src="../assets/dany_TF_book.png" width=550>
             </div>
         </div>
         <p>
@@ -196,10 +196,10 @@
         </p>
           <div class="row" align="center">
             <div class="column" align="center">
-                <img class="crop-height" src="../assets/tywin_TF_wordcloud.png">
+                <img class="crop-height" src="../assets/tywin_TF_wordcloud.png" width=550>
             </div>
             <div class="column" align="center">
-                <img class="crop-height" src="../assets/tywin_TF_book.png">
+                <img class="crop-height" src="../assets/tywin_TF_book.png" width=550>
             </div>
         </div>
         <p>
@@ -211,10 +211,10 @@
         </p>
            <div class="row" align="center">
             <div class="column" align="center">
-                <img class="crop-height" src="../assets/jon_TF_wordcloud.png">
+                <img class="crop-height" src="../assets/jon_TF_wordcloud.png" width=550>
             </div>
             <div class="column" align="center">
-                <img class="crop-height" src="../assets/jon_TF_book.png">
+                <img class="crop-height" src="../assets/jon_TF_book.png" width=550>
             </div>
         </div>
         <p>
