@@ -4,11 +4,6 @@
     <p>
         We charted interactions between characters in the world of <em>A Song of Ice and Fire</em> - both in the original books and in reader discussions.
     </p>
-    <p>
-        Here's what we found!
-    </p>
-
-    <h3>Data!</h3>
 
     <h3>What are we looking for?</h3>
     <div align="left">
@@ -24,6 +19,25 @@
       </p>
       <p>
           We want to understand this dynamic better by taking <em>A Song of Ice and Fire</em> as a case study.
+      </p>
+    </div>
+
+    <h3>Data!</h3>
+    <div align="left">
+      <p>
+        <ol>
+            <li>
+              <img src="https://media.vanityfair.com/photos/53235792932cac31720001be/master/w_2560%2Cc_limit/george-rr-martin.jpg" width=80>
+              The text for all five books in <em>A Song of Ice and Fire</em>: 7M words divided into 358 chapters.
+            </li>
+            <li>
+              <img src="https://i.imgur.com/sdO8tAw.png" width=80>
+              Scrape from 2015-2018 of 70K reddit posts from the book discussion subreddit (forum) <a href="https://www.reddit.com/r/asoiaf/" target="_blank"> /r/asoiaf </a> totalling 15M words.
+            </li>
+        </ol>
+      </p>
+      <p>
+        Now, let's <b>build a graph</b> for each of the two worlds of text!
       </p>
     </div>
 
