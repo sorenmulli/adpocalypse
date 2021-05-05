@@ -1,6 +1,8 @@
 <template>
     <header>
-    <img alt="Graph Of Thrones" src="https://fontmeme.com/permalink/210428/7464690d81ebde4bf9006cfe4deedb23.png" height="50">
+    <router-link to="/">
+        <img alt="Graph Of Thrones" src="https://fontmeme.com/permalink/210428/7464690d81ebde4bf9006cfe4deedb23.png" height="50">
+    </router-link>
     <p>A Song of Ice and Network Science</p>
     <nav>
       <ul>
