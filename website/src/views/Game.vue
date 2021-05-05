@@ -5,13 +5,13 @@
         <form @submit.prevent="submit">
             <div>
                 <p> What character are the readers discussing here? </p>
-                <p> "DRAGON MOMMY" </p>
+                <img :src="wordCloud" width=900>
             </div>
             <div>
             <select v-model="selected">
                 <option value="" disabled>Pick one</option>
-                <option v-for="option in options" :value="option.value" :key="option.index">
-                    {{ option.text }}
+                <option v-for="option in options" :value="option" :key="option.index">
+                    {{ option }}
                 </option>
             </select>
             <button type="submit">Guess</button>
@@ -28,30 +28,40 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import { useMeta } from 'vue-meta'
+
+import guessGame from '../assets/guessGame.json'
 
 export default defineComponent({
   name: 'Game',
-  props: {
-    msg: String
+  setup () {
+    useMeta({ title: 'Game' })
   },
   data () {
     return {
       started: false,
-      rightAnswer: 'D',
-      options: [
-        { text: 'Daenarys', value: 'D' },
-        { text: 'Jon Snow', value: 'J' }
-      ],
+      options: Object.keys(guessGame),
+      rightAnswer: '',
       selected: '',
-      resultMsg: ''
+      resultMsg: '',
+      wordCloud: ''
     }
   },
   methods: {
     start () {
+      const characters = Object.keys(guessGame)
+      this.rightAnswer = characters[Math.floor(Math.random() * characters.length)]
+      this.wordCloud = require('../assets/' + guessGame[this.rightAnswer])
+      console.log(this.rightAnswer)
+
       this.started = true
     },
     submit () {
-      this.resultMsg = this.selected === this.rightAnswer ? 'You got that one right!' : 'Nope, try another'
+      const correct = this.selected === this.rightAnswer
+      this.resultMsg = this.correct ? 'You got that one right!' : 'Nope, try another'
+      if (correct) {
+        this.start()
+      }
     }
   }
 })
