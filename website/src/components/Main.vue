@@ -111,14 +111,22 @@
         pictures are how one might expect the communities to look if characters were only mentioned along with other characters from the same faction.-->
     </p>
     <div align="center">
-        <img src="../assets/communities_book.png">
-        <br>
-        <img src="../assets/communities_reddit.png">
-        <img src="../assets/communities_true_reddit.png">
+      <figure>
+        <a :href="require('../assets/communities.png')" target="_blank">
+            <img src="../assets/communities.png" width=900>
+        </a>
+      <figcaption>
+        Fig. 4 -
+        For each graph, three <em>communities</em> were found revealing that the groups of characters that often go together are quite different in the books and in the Reddit discussions.
+        (Click image for larger)
+      </figcaption>
+      </figure>
     </div>
     <p>
+        <!--Udkommenteret: Vi skal lige se, om dette stadig er relevant
         Now these plots are interesting! The characters that have been linked are the ones that are most often mentioned together. Every character is mentioned to some extent, so these illustrations only show the MOST mentioned characters. Now what do we see from these illustrations?
         Well, in the graph of the book mentions, we see that the Starks and Lannisters are mentioned together like expected and as can be seen in the true graph.
+        -->
     </p>
     </div>
 
