@@ -49,7 +49,7 @@ export default {
   }
 }
 p {
-  margin: 14px 30% 14px 30%;
+  margin: 14px 20% 14px 20%;
 }
 a {
   color: #42b983;

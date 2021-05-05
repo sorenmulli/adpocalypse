@@ -122,6 +122,65 @@
     </p>
     </div>
 
+    <h2>How are the characters described in the book compared to the subreddit Asioaf? </h2>
+    <div align="left">
+        <p>
+            In order to determine if the characters are defined by the same words in the book compared to the subreddit several approaches
+            to this can be taken. In the following three different characters will be analyzed to show some of the differences from the subreddit
+            and the books. For the rest of the characters worldclouds can be found in the notebook or in our game section. To understand the three characters
+            more deeply, we will look into four things:<br><br> Term frequency (TF), term frequency - inverse document frequency
+            (TF-IDF), word clouds as well as the lexical dispersion of words from reddit in the book series. <br>
+            <br>
+            <b>Term frequency</b> <br> Term-frequencies cannot capture whether the term in a deeper sense characterizes the specific character, that is; is
+             the frequency high because the term is especially important to the character or because it is just commonly used?
+             Such as the terms <em> lord </em> and <em> ser </em> from the books. When counting occurences this interesting difference is not revealed.<br>
+             <br>
+             <b>Term Frequency - Inverse Document Frequency</b>
+             <br> So, what is the difference bettwen TF and TF-IDF? The inverse document frequency is mathematically defined as
+             as a logarithmically scaled inverse fraction of documents containg the word, such that only the relative scaling is of importance.
+             The TF-IDF words are much more descriptive, as they contain more unique information about characters such as jokes about the sentiment towards the
+             character and special names of people related to the character. Thus, this will allow to find more descriptive words of of the characters from the
+             point of redditors and the book series respectively. This descriptiveness comes from the specificity that gives extra weight to terms that occur
+             rarely in the corpus and thus, understood informally, carries more information about this particular document.<br>
+             <br>
+             <b>Word Cloud</b>
+             <br> Word clouds are visual representations of text. In the case of this project we've used Word Clouds to illustrate
+              the TF-IDF words specified to each character in Game of Thrones. To analyze how the characters are perceived by the author
+              of the book compared to the subreddit we have constructed a word cloud based on reddit posts and the book series itself. These word clouds
+              are illustrated for Jon Snow, Tywin Lannister and Daenerys Targaryen.
+        </p>
+        <h3 align="center">Fig. 1 - Word Cloud for Daenerys Targaryen </h3>
+        <div align="center">
+        </div>
+         <div align="center" id="div_1">
+            <figure>
+            <img src="../assets/dany_word_book.png" width=900>
+            <img src="../assets/dany_word_red.png" width=900>
+            <figcaption> </figcaption>
+            </figure>
+        </div>
+        <h3 align="center">Fig. 2 - Word Cloud for Tywin Lannister </h3>
+        <div align="center">
+        </div>
+         <div align="center" id="div_2">
+            <figure>
+            <img src="../assets/dany_word_book.png" width=900>
+            <img src="../assets/dany_word_red.png" width=900>
+            <figcaption> </figcaption>
+            </figure>
+        </div>
+        <h3 align="center">Fig. 3 - Word Cloud for Jon Snow </h3>
+        <div align="center">
+        </div>
+         <div align="center" id="div_2">
+            <figure>
+            <img src="../assets/dany_word_book.png" width=900>
+            <img src="../assets/dany_word_red.png" width=900>
+            <figcaption> </figcaption>
+            </figure>
+        </div>
+    </div>
+
    </div>
 </template>
 
@@ -135,3 +194,28 @@ export default defineComponent({
   }
 })
 </script>
+
+<style lang="scss">
+#div_1 {
+  position: relative;
+  bottom: 210px;
+  top: -210px;
+}
+#div_2 {
+  position: relative;
+  bottom: 218px;
+}
+#div_2 img {
+  width: 50%;
+}
+#div_1 img {
+  width: 50%;
+}
+figcaption {
+    font-style: bold;
+    padding: -88px;
+    text-align: center;
+    caption-side: top;
+    height: -20px;
+}
+</style>
