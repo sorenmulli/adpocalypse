@@ -176,15 +176,51 @@
               the most frequest words specified to each character in Game of Thrones both from reddit and from the books.
               The following three word clouds represents Daenerys Targaryen, Tywin Lannister and Jon Snow.
         </p>
-        <div class="crop" align="right" id=div_1>
-            <img src="../assets/dany_TF_wordcloud.png">
-          <!--  <img src="../assets/dany_TF_wordcloud.png">
-            <img src="../assets/tywin_TF_wordcloud.png">
-            <img src="../assets/tywin_TF_wordcloud.png">
-            <img src="../assets/jon_TF_wordcloud.png">
-            <img src="../assets/jon_TF_wordcloud.png">-->
+        <div class="row" align="center">
+            <div class="column" align="center">
+                <img class="crop-height" src="../assets/dany_TF_wordcloud.png">
+            </div>
+            <div class="column" align="center">
+                <img class="crop-height" src="../assets/dany_TF_book.png">
+            </div>
         </div>
-    </div>
+        <p>
+            On the left hand is the word cloud constructed from the reddit data and on the right hand side is the worldcloud from the book.
+            We do see some overlap in these word clouds; blood, dragon, lord, old, daenerys, tyrion. This might suggest that there are some overlap between
+            the fantasy universe from the book and the universe in the mind of the redditors - at least on how Daenerys is percieved. However,
+            we also see differences between the most frequent terms for Daenerys; season, love, aegon. Aegon is Daenerys brother and is potrayed in
+            the books as he will play a big role in the story. This has resulteted in a lot of debate about this character on the subreddit, but
+            his storyline in the book never progressed. In conclusion, the words that describe Daenarys in the books compared to the subreddit are
+            surprisingly similar which suggest that the fantasy universe intended by George R. R. Martin has latched on to its readers. Lets see if this
+            holds true for all characters.
+        </p>
+          <div class="row" align="center">
+            <div class="column" align="center">
+                <img class="crop-height" src="../assets/tywin_TF_wordcloud.png">
+            </div>
+            <div class="column" align="center">
+                <img class="crop-height" src="../assets/tywin_TF_book.png">
+            </div>
+        </div>
+        <p>
+        On the left: Reddit data. On the right: Book data. Again, we see a lot of overlap between each of these word clouds. Most notably;
+        Tyrion, lord, father, Cersei, Jaime. The differences are; Aerys, love, Rhaegar, black. Again, we see a great overlap, but some even
+        more interesting differences. Aerys (also known as the mad king) is mentioned a lot on the subreddit, but has less focus in the books.
+        Arya and Tywin meet in tv-show but never in the book. This, might be why she is in the reddit wordcloud but not in the book cloud.
+        We still see a lot of overlap but some more noticeable differences. Will this hold true for the next character?
+        </p>
+           <div class="row" align="center">
+            <div class="column" align="center">
+                <img class="crop-height" src="../assets/jon_TF_wordcloud.png">
+            </div>
+            <div class="column" align="center">
+                <img class="crop-height" src="../assets/jon_TF_book.png">
+            </div>
+        </div>
+        <p>
+        On the left: Reddit data. On the right: Book data. Jon
+        </p>
+        </div >
 </div>
 </template>
 
@@ -199,15 +235,21 @@ export default defineComponent({
 })
 </script>
 <style lang="scss">
- .crop {
-        width: 660px;
-        height: 250px;
-        overflow: hidden;
-    }
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 49%;
+  padding: 0px;
+}
 
-    .crop img {
-        width: 380px;
-        height: 300px;
-        margin: -75px 0 0 -100px;
-    }
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.crop-height {
+    /* max-width: 1200px; /* img src width (if known) */
+    max-height: 600px;
+    overflow: hidden; }
 </style>
