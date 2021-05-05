@@ -41,9 +41,13 @@
       </p>
     </div>
     <div align="center">
-      <img src="../assets/book_graph.png">
+      <a :href="require('../assets/book_graph.png')" target="_blank">
+        <img src="../assets/book_graph.png" width="900">
+      </a>
       <br>
-      <img src="../assets/reddit_graph.png">
+      <a :href="require('../assets/reddit_graph.png')" target="_blank">
+        <img src="../assets/reddit_graph.png" width="900">
+      </a>
     </div>
 
     <h3>What is revealed?</h3>
