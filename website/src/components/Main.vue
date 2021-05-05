@@ -116,13 +116,9 @@
 
     <div align="left">
     <p>
-        <b>The communties</b> of the two graphs are found by answering the question:
-        <q> Which hubs of characters often appear together? </q>
-
-        <!--Udkommenteret: Tænker, det skal ind i notesbogen i stedet
-
-        We used community detection on the 34 most notable characters of Game of Thrones on both the books and on reddit. This will allow us to see if redditors prioritize the character relations in the same way as the books do and if characters are usually mentioned in relation to their factions, like one might expect. The result of this analysis can be seen in the four pictures below. The two first pictures are the communities found in the book and on reddit respectively. The two next
-        pictures are how one might expect the communities to look if characters were only mentioned along with other characters from the same faction.-->
+        To get a clearer picture of how the two graphs really differ, <b>the communities</b> of the two graphs are found by answering the question:
+        <q> Which hubs of characters appear together so often that it would not happen at random? </q>
+        The answer to this algorithmic question is given in the figure below.
     </p>
     <div align="center">
       <figure>
@@ -137,15 +133,26 @@
       </figure>
     </div>
     <p>
-        <!--Udkommenteret: Vi skal lige se, om dette stadig er relevant
-        Now these plots are interesting! The characters that have been linked are the ones that are most often mentioned together. Every character is mentioned to some extent, so these illustrations only show the MOST mentioned characters. Now what do we see from these illustrations?
-        Well, in the graph of the book mentions, we see that the Starks and Lannisters are mentioned together like expected and as can be seen in the true graph.
-        -->
+       For the book graph, a fan of the series will recognize the defining factor of the three found graph communities:
+       Geography!
+
+       All the characters in book community 1 are found around the capital region of the universe, the ones in community 2 are found in the far east and the third community corresponds somewhat clearly to the icy North.
     </p>
+    <p>
+        The Reddit graph groupings do have some similarities to the above: Community 3 corresponds quite well to the book community 1, although the reader community can be better described using the abstract concept of the royal court rather than the geographic region.
+
+        The first community contains many of the characters that are main actors in the central storyline: Jon Snow, Dany, Ned Stark, Bran Stark, and as such would often be discussed together.
+        Reddit community 2 seems centred on the two Stark sisters, Arya and Sansa, and their mother.
+        This community includes many people that at different points in the stories protect both of the daughters, thus revealing how connected the stories of these two daughters are, even though they are no geographically close all through the story.
+    </p>
+        <!--- Indsæt opsamling på ovenstående: Geografiske mod mere meningsfulde fællesskaber -->
     </div>
 
-    <h2>How are the characters described in the book compared to the subreddit Asioaf? </h2>
     <div align="left">
+        <p>
+            The above gave us some insight into differences between the social world created by the author and the one in the reader discussions.
+            But, to understand more differences than the social ones, we need to <b>consider more of the text</b> than just whether two characters appear together.
+        </p>
         <p>
             In order to determine if the characters are defined by the same words in the book compared to the subreddit several approaches
             to this can be taken. In the following three different characters will be analyzed to show some of the differences from the subreddit
