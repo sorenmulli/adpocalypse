@@ -49,7 +49,7 @@ export default {
   }
 }
 p {
-  margin: 10px 20% 10px 20%;
+  margin: 14px 30% 14px 30%;
 }
 ul {
   list-style-type: none;
