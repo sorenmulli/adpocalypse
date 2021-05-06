@@ -404,6 +404,32 @@
         (Click to view big)
       </figcaption>
       </figure>
+    <h3>Tell me yours and I'll tell you mine</h3>
+    <div align="left">
+    <p>
+        Now that we have seen which words describe characters and how characters can be put into different communities, we want to investigate
+        an even more important question: Who does Reddit have the hots for? Who does Reddit have it out for? Are Redditors - one of the most
+        opinionated platforms on the planet - have characters they seem to be neutral towards? It is time to find out with the illustration below,
+        showing redditor sentiment, their attitude, for five interesting characters.
+    </p>
+    </div>
+    <div align="center">
+        <img class="crop-height" src="../assets/sentiment_analysis.png" width=550>
+    </div>
+    <div align="left">
+    <p>
+        Immediately, we notice that the text of some of the characters reach outside of the plot borders. A shame, but we have much more important
+        results to discuss! Firstly, we see that we finally have an answer to whether Joffrey or Ramsey is the most hated; Reddit answers a resounding
+        Ramsey. It definitely makes sense that both are scraping the bottom of the hate barrel based on their ruthless and vile behaviour. <b> MORE ABOUT
+        THE CHARACTERS</b>
+    </p>
+    <p>
+        Another quick point is that the VADER sentiment analysis actually gets widely different answers than the dictionary-based sentiment analysis. This
+        and much more can be examined in detail in our notebook tailor-made for this project. It contains all the code used to make
+        the plots and get the results you have been enjoying throughout this website. Come have a look, we look forward to being shamed for using try except
+        statements instead of handling errors like adults.
+    </p>
+    </div>
 </div>
 </template>
 
