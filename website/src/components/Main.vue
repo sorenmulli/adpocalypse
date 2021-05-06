@@ -11,7 +11,7 @@
         <b>Worldbuilding</b>, the process of constructing imaginary universes, has intrigued audiences for as long as humanity has been telling stories. The detailed, gritty fantasy world of <em>A Song of Ice and Fire</em> (the book series on which Game of Thrones is based) is one of the most popular examples of this in the recent years.
       </p>
       <p>
-          As worldbuilding, in our estimation, plays a growing part in popular literature and media, it is of interest to study its effect the readers - an effect which American author John Harrison characterizes as negative, noting <q>Worldbuilding numbs the reader’s ability to fulfil their part of the bargain ...</q>, even suggesting that it might make us receptive to advertising and political rhetoric.
+          As worldbuilding, in our estimation, plays a growing part in popular literature and media, it is of interest to study how the readers relate to it - a relationship which American author John Harrison characterizes as negative, noting <q>Worldbuilding numbs the reader’s ability to fulfil their part of the bargain ...</q>, even suggesting that it might make us receptive to advertising and political rhetoric.
       (John Harrison: "Very Afraid", 2007, Online, Fetched 05/05-21 <a href="http://web.archive.org/web/20080410181840/http://uzwi.wordpress.com/2007/01/27/very-afraid" target="_blank">here</a>)
       </p>
       <p>
@@ -145,7 +145,10 @@
         Reddit community 2 seems centred on the two Stark sisters, Arya and Sansa, and their mother.
         This community includes many people that at different points in the stories protect both of the daughters, thus revealing how connected the stories of these two daughters are, even though they are no geographically close all through the story.
     </p>
-        <!--- Indsæt opsamling på ovenstående: Geografiske mod mere meningsfulde fællesskaber -->
+    <p>
+        Overall, these partitioning differences reveal natural domain differences.
+        The discussion realm is not bound by geographic limits and obvious character interactions; the fan discussions transcend the merely descriptive and find parallels in different storylines, possibly providing a counter argument to the Ben Harrison's point about the reader laziness in wordbuilding literature.
+    </p>
     </div>
 
     <div align="left">
