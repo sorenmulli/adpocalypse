@@ -1,5 +1,8 @@
 <template>
   <div class="home">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <div :style="{'backgroundImage':'../assets/back.jpg'}">
+  </div>
     <h1>{{ msg }}</h1>
     <p>
         We charted interactions between characters in the world of <em>A Song of Ice and Fire</em> - both in the original books and in reader discussions.
@@ -325,6 +328,64 @@
         On the left: Reddit data. On the right: Book data. Jon
         </p>
         </div >
+        <div align="center">
+             <h3>Dispersion plots </h3>
+             <p>
+                In order to compare the language of the game of thrones readers to the language of the book series - we've constructed several dispersion plots.
+                We have chosen to look at the most frequent terms from the subreddit to see if these are words used in the book and furthermore if these words
+                are used in the context of the specific character.
+            </p>
+        </div>
+      <div align="center">
+      <figure>
+        <a :href="require('../assets/dispersion_dany_reddit.png')" target="_blank">
+            <img src="../assets/dispersion_dany_reddit.png" width=1200>
+        </a>
+      <figcaption>
+        Fig. 5 -
+        A dispersion plot of the most frequent terms on the subreddit in describing Daenarys.
+        (Click image for larger)
+      </figcaption>
+      </figure>
+    </div>
+    <p>
+      Some of the most defining words for Daenarys in the minds of the redditors are aegon, dragon, whtie, blood and iron. Interestingly, the language used
+      by the redditors correspond to the language used in the books. This may suggest that the redditors have adopted the language of the book.
+      We furthermore see that words such as aegon and dragon are mentioned with almost the same frequency as Daenarys in the book series.
+    </p>
+        <div align="center">
+      <figure>
+        <a :href="require('../assets/dispersion_tywin_reddit.png')" target="_blank">
+            <img src="../assets/dispersion_tywin_reddit.png" width=1200>
+        </a>
+      <figcaption>
+        Fig. 6 -
+        A dispersion plot of the most frequent terms on the subreddit in describing Tywin.
+        (Click to enlarge)
+      </figcaption>
+      </figure>
+    </div>
+    <p>
+      Father and Lord are two defining terms for Tywin from the redditors. However, these are very frequently used words
+      in the book which again might suggest that the redditors has adopted the language. Prince does seem to have the same frequency
+      as Tywin himself which could mean that this is a defining word for the character in the book as well as in the mind of the subreddit.
+    </p>
+      <div align="center">
+      <figure>
+        <a :href="require('../assets/dispersion_jon_reddit.png')" target="_blank">
+            <img src="../assets/dispersion_jon_reddit.png" width=1200>
+        </a>
+      <figcaption>
+        Fig. 7 -
+        A dispersion plot of the most frequent terms on the subreddit in describing Jon.
+        (Click to view big)
+      </figcaption>
+      </figure>
+    </div>
+    <p>
+      Many of the words used by redditors to define Jon Snow are frequently used in the book. This, would to some extend confirm
+      the hyphothesis that the redditors have adopted the language used in the books series a song of ice and fire.
+    </p>
 </div>
 </template>
 
@@ -376,4 +437,16 @@ th {
     /* max-width: 1200px; /* img src width (if known) */
     max-height: 600px;
     overflow: hidden; }
+.bg {
+  /* The image used */
+  background-image: url("../assets/back.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 </style>
