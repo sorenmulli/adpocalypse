@@ -339,7 +339,7 @@
       <div align="center">
       <figure>
         <a :href="require('../assets/dispersion_dany_reddit.png')" target="_blank">
-            <img src="../assets/dispersion_dany_reddit.png" width=1200>
+            <img src="../assets/dispersion_dany_reddit.png" width=600>
         </a>
       <figcaption>
         Fig. 5 -
@@ -356,7 +356,7 @@
         <div align="center">
       <figure>
         <a :href="require('../assets/dispersion_tywin_reddit.png')" target="_blank">
-            <img src="../assets/dispersion_tywin_reddit.png" width=1200>
+            <img src="../assets/dispersion_tywin_reddit.png" width=600>
         </a>
       <figcaption>
         Fig. 6 -
@@ -373,7 +373,7 @@
       <div align="center">
       <figure>
         <a :href="require('../assets/dispersion_jon_reddit.png')" target="_blank">
-            <img src="../assets/dispersion_jon_reddit.png" width=1200>
+            <img src="../assets/dispersion_jon_reddit.png" width=600>
         </a>
       <figcaption>
         Fig. 7 -
@@ -386,6 +386,24 @@
       Many of the words used by redditors to define Jon Snow are frequently used in the book. This, would to some extend confirm
       the hyphothesis that the redditors have adopted the language used in the books series a song of ice and fire.
     </p>
+      <figure>
+        <a :href="require('../assets/pca_book.png')" target="_blank">
+            <img src="../assets/pca_book.png" width=900>
+        </a>
+      <figcaption>
+        Fig. X -
+        (Click to view big)
+      </figcaption>
+      </figure>
+      <figure>
+        <a :href="require('../assets/pca_reddit.png')" target="_blank">
+            <img src="../assets/pca_reddit.png" width=900>
+        </a>
+      <figcaption>
+        Fig. Y -
+        (Click to view big)
+      </figcaption>
+      </figure>
 </div>
 </template>
 
