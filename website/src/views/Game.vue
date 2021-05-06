@@ -2,7 +2,7 @@
   <div class="game">
     <h1> Guess characters from Reddit discussion word clouds  </h1>
     <div v-if="started">
-        <form @submit.prevent="submit">
+        <form v-if="thereIsMore" @submit.prevent="submit">
             <div>
                 <p> What character are the readers discussing here? </p>
                 <img :src="wordCloud" width=900>
@@ -17,8 +17,11 @@
             <button type="submit">Guess</button>
             </div>
         </form>
-        <p> {{resultMsg}} </p>
-  </div>
+        <p> {{ resultMsg }} </p>
+            <p v-if="total">
+              Bulls-eyes: {{ corrects }}/{{ total }}
+            </p>
+     </div>
   <div v-else>
     <p> Do you think you know the characters? See if you can recognize them in the reader discussions!</p>
     <button type="button" @click="start">Start guessing</button>
@@ -40,7 +43,10 @@ export default defineComponent({
   data () {
     return {
       started: false,
+      thereIsMore: true,
       options: Object.keys(guessGame),
+      corrects: 0,
+      total: 0,
       rightAnswer: '',
       selected: '',
       resultMsg: '',
@@ -49,21 +55,36 @@ export default defineComponent({
   },
   methods: {
     start () {
+      this.started = true
+      this.nextRound()
+    },
+    nextRound () {
       this.selected = ''
       this.rightAnswer = this.options[Math.floor(Math.random() * this.options.length)]
-      this.wordCloud = require('../assets/' + guessGame[this.rightAnswer])
       console.log(this.rightAnswer)
-
-      this.started = true
+      this.wordCloud = require('../assets/' + guessGame[this.rightAnswer])
     },
     submit () {
       const correct = this.selected === this.rightAnswer
       if (correct) {
-        this.resultMsg = 'You got that one right!'
-        this.start()
+        this.resultMsg = '🔥🐲 You got that one right! 🐲🔥'
+        this.corrects++
       } else {
-        this.resultMsg = 'Nope, try another'
+        this.resultMsg = '❄️☠️ No, it was actually ' + this.rightAnswer + '. Keep it up, though! ☠️❄️'
       }
+      const rightIndex = this.options.indexOf(this.rightAnswer, 0)
+      this.total++
+      this.options.splice(rightIndex, 1)
+      if (this.options === undefined || this.options.length === 0) {
+        this.endGame()
+      } else {
+        this.nextRound()
+      }
+    },
+    endGame () {
+      this.thereIsMore = false
+      const percentage = Math.round(this.corrects / this.total * 100)
+      this.resultMsg = `🌟Game ended! You got ${percentage}% correct. Wow. Just wow. Reload page to play again! 🌟`
     }
   }
 })
