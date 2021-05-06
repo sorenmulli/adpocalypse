@@ -146,6 +146,106 @@
         This community includes many people that at different points in the stories protect both of the daughters, thus revealing how connected the stories of these two daughters are, even though they are no geographically close all through the story.
     </p>
     <p>
+        When we compare these partitions with the factions (families, political groups) in the fantasy world, it is seen that the book graph has highest correspondence, showing that the readers consider Amore than just geography and family when discussing the story.
+        This comparison can be seen in the colours in the partitions and charted in the tables below.
+    </p>
+    <div align="center">
+     <table>
+     <caption>Tab. 1 - Communities found from the book chapters</caption>
+        <tr>
+            <th>Community</th>
+            <th>Baratheon</th>
+            <th>Tyrell</th>
+            <th>Stark</th>
+            <th>Lannister</th>
+            <th>Other</th>
+            <th>Night's Watch</th>
+            <th>Targaryen</th>
+            <th>Greyjoy</th>
+        </tr>
+        <tr>
+            <td>Com. 1</td>
+            <td>2</td>
+            <td>1</td>
+            <td>2</td>
+            <td>9</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Com. 2</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>4</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Com. 3</td>
+            <td>2</td>
+            <td>0</td>
+            <td>5</td>
+            <td>0</td>
+            <td>3</td>
+            <td>3</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+     </table>
+     <table>
+        <caption>Tab. 2 - Communities found from the Reddit posts</caption>
+        <tr>
+            <th>Community</th>
+            <th>Baratheon</th>
+            <th>Tyrell</th>
+            <th>Stark</th>
+            <th>Lannister</th>
+            <th>Other</th>
+            <th>Night's Watch</th>
+            <th>Targaryen</th>
+            <th>Greyjoy</th>
+        </tr>
+        <tr>
+            <td>Com. 1</td>
+            <td>3</td>
+            <td>0</td>
+            <td>3</td>
+            <td>0</td>
+            <td>1</td>
+            <td>3</td>
+            <td>4</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Com. 2</td>
+            <td>0</td>
+            <td>0</td>
+            <td>4</td>
+            <td>2</td>
+            <td>3</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Com. 3</td>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+            <td>7</td>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+        </tr>
+      </table>
+    </div>
+    <p>
         Overall, these partitioning differences reveal natural domain differences.
         The discussion realm is not bound by geographic limits and obvious character interactions; the fan discussions transcend the merely descriptive and find parallels in different storylines, possibly providing a counter argument to the Ben Harrison's point about the reader laziness in wordbuilding literature.
     </p>
@@ -239,6 +339,26 @@ export default defineComponent({
 })
 </script>
 <style lang="scss">
+ table {
+  width: 60%;
+ }
+ table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+ th {
+  text-align: left;
+}
+tr:nth-child(even) {
+  background-color: #eee;
+}
+tr:nth-child(odd) {
+  background-color: #fff;
+}
+th {
+  color: white;
+  background-color: black;
+}
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
   float: left;
