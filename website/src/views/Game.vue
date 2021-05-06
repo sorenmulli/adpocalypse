@@ -49,8 +49,8 @@ export default defineComponent({
   },
   methods: {
     start () {
-      const characters = Object.keys(guessGame)
-      this.rightAnswer = characters[Math.floor(Math.random() * characters.length)]
+      this.selected = ''
+      this.rightAnswer = this.options[Math.floor(Math.random() * this.options.length)]
       this.wordCloud = require('../assets/' + guessGame[this.rightAnswer])
       console.log(this.rightAnswer)
 
@@ -58,9 +58,11 @@ export default defineComponent({
     },
     submit () {
       const correct = this.selected === this.rightAnswer
-      this.resultMsg = this.correct ? 'You got that one right!' : 'Nope, try another'
       if (correct) {
+        this.resultMsg = 'You got that one right!'
         this.start()
+      } else {
+        this.resultMsg = 'Nope, try another'
       }
     }
   }
