@@ -162,7 +162,7 @@
         This community includes many people that at different points in the stories protect both of the daughters, thus revealing how connected the stories of these two daughters are, even though they are no geographically close all through the story.
     </p>
     <p>
-        When we compare these partitions with the factions (families, political groups) in the fantasy world, it is seen that the book graph has highest correspondence, showing that the readers consider more than just geography and family when discussing the story.
+        When we compare these partitions with the factions (families, political groups) in the fantasy world, it is seen mathematically that the book graph has highest correspondence, showing that the readers consider more than just geography and family when discussing the story.
         This faction grouping can be seen in the colours in the partitions and charted in the tables below.
     </p>
     <div align="center">
@@ -417,24 +417,51 @@
       the hyphothesis that the redditors have adopted the language used in the books series a song of ice and fire.
     </p>
     <h3> The character space </h3>
+      <div align="left">
+      <p>
+      There was clearly a difference between the two social graphs and the previous discussions have found some dimensions of the differences between the two worlds.
+      But can we map the worlds of the characters directly?
+      </p>
+      <p>
+        A way to attempt this is by compressing the two complex text data sets into a collection simple points on a field.
+        We do this using principal component analysis to find the most meaningful way to visualize the 34 character texts on 2D image - both for the book chapters and reddit posts.
+        The result is shown below:
+      </p>
+      <div align="center">
+      <figure>
+        <a :href="require('../assets/pca_reddit.png')" target="_blank"> <!-- NOTE!: png-titlerne er omvendte! -->
+            <img src="../assets/pca_reddit.png" width=900>
+        </a>
+      <figcaption>
+        Fig. 8 -
+        The character space created from the book chapters
+        (Click to view big)
+      </figcaption>
+      </figure>
       <figure>
         <a :href="require('../assets/pca_book.png')" target="_blank">
             <img src="../assets/pca_book.png" width=900>
         </a>
       <figcaption>
-        Fig. X -
+        Fig. 9 -
+        The 2D representation of character texts from Reddit posts
         (Click to view big)
       </figcaption>
       </figure>
-      <figure>
-        <a :href="require('../assets/pca_reddit.png')" target="_blank">
-            <img src="../assets/pca_reddit.png" width=900>
-        </a>
-      <figcaption>
-        Fig. Y -
-        (Click to view big)
-      </figcaption>
-      </figure>
+      </div>
+      <p>
+        What can we do with the above, weird mathematical abstraction where the rich text relating to each character is suddenly reduced to an arrow?
+        Well, we can look what arrows are related!
+        For the book data, the arrows are divided beautifully into factions: When moving clock-wise, the first four are different cour personalitites, the next many are Lannisters, then the Baratheoons, then the Starks and Notheners.
+        We then again support the idea that book co-mentions are contain much geographic and factional context.  Let's also note that, in this space, the rotten child king Joffrey is more of a Lannister than he is a Baratheon despite of his name - is a proposition that would not seem controversial to any viewer or reader.
+        </p>
+        <p>
+        The Reddit space similarly seems influenced by the factions, but the two possible main characters Jon Snow and Dany stand out from the crowd as being unique in the text world.
+        Why are these so special and why do they sit up in the corner together?
+        Well, hard to answer when we don't want to directly spoil anything.
+      </p>
+      <p>All in all, the two worlds are clearly connected - based on the same understanding on a fictional place, but do contain information about different kinds of relationships between these fantasy people.</p>
+      </div>
     <h3>Tell me yours and I'll tell you mine</h3>
     <div align="left">
     <p>
@@ -463,9 +490,23 @@
     </p>
     </div>
     <h3>What was it all about?</h3>
-    <div align="lefter">
+    <div align="left">
         <p>
-
+        We tried to pry an understanding out of the text datasets and their differences:
+        Our tools were blunt and our goals more of discussion than hard science, so no more than an intuitive understanding is expected.
+        But isn't that also what sum of all those previous plots and their underlying analyses give us?
+        A view into two ways to visit a fantasy world:
+        One of the actual geographic relationships, another of their comparisons on a more interpretational level.
+        One where families go together, another where the most unique people are connected transcending time and space.
+        One of fantasy historical facts, another of opinion and preference.
+        </p>
+        <p>
+        After working though the two text domains, we are not quite as pessimistic as John Harrison:
+        Worldbuilding might learn readers the art of accepting complex fictive universes as real, but we still have hope that the search for meaningful explanations that seem to characterize the discussions ultimately make the nerdy readers better at understanding their own real life world.
+        Even if that one has a shocking lack of dragons.
+        </p>
+        <p>
+        Remember to check out <router-link to="/game"> our word cloud game </router-link> and read details at <router-link to ="/about">the about page</router-link>.
         </p>
     </div>
 </div>
