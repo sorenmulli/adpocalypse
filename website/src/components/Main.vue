@@ -7,7 +7,11 @@
     <p>
         We charted interactions between characters in the world of <em>A Song of Ice and Fire</em> - both in the original books and in reader discussions.
     </p>
-
+    <div class="bg" align="center" width=100% position="float">
+      <a :href="require('../assets/back.jpg')" target="_blank">
+            <img src="../assets/back.jpg" height=440 width=102%>
+        </a>
+      </div>
     <h3>What are we looking for?</h3>
     <div align="left">
       <p>
@@ -259,6 +263,11 @@
             The above gave us some insight into differences between the social world created by the author and the one in the reader discussions.
             But, to understand more differences than the social ones, we need to <b>consider more of the text</b> than just whether two characters appear together.
         </p>
+          <div align="center" class=bg1 width=100% position="float">
+        <a :href="require('../assets/bogen.png')" target="_blank">
+              <img src="../assets/bogen.png" height=420 width=102%>
+          </a>
+        </div>
         <p>
             In order to determine if the characters are defined by the same words in the book compared to the subreddit several approaches
             to this can be taken. In the following three different characters will be analyzed to show some of the differences from the subreddit
@@ -492,5 +501,17 @@ th {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.bg1 {
+  /* The image used */
+  background-image: url("../assets/bogen.png");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 790px;
 }
 </style>
