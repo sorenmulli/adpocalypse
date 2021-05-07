@@ -87,19 +87,19 @@
         These are three characters that are spatially far away from eachother in most of the story, but might be much more adjacent in space of Reddit discussions dealing with possible endings, wild theories and favorite characters.
     </p>
     <p>
-       While interesting, the plots are pretty messy (even though we had to hide many weak links and lonely characters), so let us go beyond this qualitative zoom in on local graph differences and look for a way to <em>measure</em> what the difference is.
+       While interesting, the plots are certainly messy (and that is even we with some filtering of weak links and lonely characters), so let us go beyond this qualitative zoom in on local graph differences and look for a way to <em>measure</em> what the difference is.
     </p>
     </div>
     <h3>What is going on in the two social worlds?</h3>
     <div align="left">
     <p>
         The easiest numbers to look at are the strengths of the links.
-        The average weight of links - how often the characters occur in same chapter of post - is, in the books,  7% and is in average varies about 8% away from this typical value.
-        For the reddit graph, these values are very different: 0.7% is the average strength and it varies typically 0.8%.
+        The average weight of links - how often the characters occur in same chapter of post - is, in the books,  7% and varies normally about 8% away from this typical value.
+        For the reddit graph, these values are very different: 0.7% is the average strength with variations around 0.8%.
     </p>
     <p>
         This means that weights are in general <b>much</b> smaller in the discussion data:
-        The readers talk about a large number of different character pairs -- it not just <em>all</em> the attractive pair Jon and Dany (those two fiery fighters <em>do</em> outperform the mean quite a bit by occurring in 8% of all discussions)
+        The readers do not discuss the same people in all of the 70K posts -- so it's not just <em>all</em> the attractive pair Jon and Dany (those two fiery fighters <em>do</em> outperform the mean quite a bit by occurring in 8% of all discussions)
     </p>
     <p>
         When we plot the proportions for the entire list of characters (Fig. 3), we realize why the means are so different:
@@ -121,12 +121,6 @@
       We also measure how often a character's friends are also friends themselves.
       Compared to the mean connection strengths, these <em>clusterings</em> of the two graphs are much closer together, implying that there are also closely-knitted groupings of characters in the Reddit graph.
     </p>
-    <p>
-      When considering how strong the links between any two characters are, by considering longest paths, we see the same not quite clear picture:
-      It is easier to find characters that often occur between
-    </p>
-    <p>
-    </p>
     </div>
 
     <h3>It's good to have cliques in a dragon world </h3>
@@ -134,7 +128,7 @@
     <p>
         To get a clearer picture of how the two graphs really differ, <b>the communities</b> of the two graphs are found by answering the question:
         <q> Which hubs of characters appear together so often that it would not happen at random? </q>
-        The answer to this algorithmic question is given in the figure below.
+        The answer to this algorithmic question is given in the figures below.
     </p>
     <div align="center">
       <figure>
@@ -159,7 +153,7 @@
 
         The first community contains many of the characters that are main actors in the central storyline: Jon Snow, Dany, Ned Stark, Bran Stark, and as such would often be discussed together.
         Reddit community 2 seems centred on the two Stark sisters, Arya and Sansa, and their mother.
-        This community includes many people that at different points in the stories protect both of the daughters, thus revealing how connected the stories of these two daughters are, even though they are no geographically close all through the story.
+        This community includes many people that at different points in the stories protect both of the daughters, thus revealing how connected the stories of these two daughters are, even though they are not geographically close in most of the story.
     </p>
     <p>
         When we compare these partitions with the factions (families, political groups) in the fantasy world, it is seen mathematically that the book graph has highest correspondence, showing that the readers consider more than just geography and family when discussing the story.
@@ -263,10 +257,10 @@
     </div>
     <p>
         Overall, these partitioning differences reveal natural domain differences.
-        The discussion realm is not bound by geographic limits and obvious character interactions; the fan discussions transcend the merely descriptive and find parallels in different storylines, possibly providing a counter argument to the Ben Harrison's point about the reader laziness in wordbuilding literature.
+        The discussion realm is not bound by geographic limits and obvious character interactions; the fan discussions transcend the merely descriptive and find parallels in different storylines, possibly providing a counter argument to Ben Harrison's point about the reader laziness in wordbuilding literature.
     </p>
     </div>
-    <h3>But what about all those words?</h3>
+    <h3>But what about all the words?</h3>
     <div align="left">
         <p>
             The above gave us some insight into differences between the social world created by the author and the one in the reader discussions.
@@ -328,7 +322,7 @@
             </div>
             </div>
         <p>
-          It's again hard to get a  clear picture of the properties of this character, but there is a larger diversity in names and words in the Reddit text world, which includes Jon Snow-adjacent talk of dragons and using his' family name "Stark" which he is as a bastard is not entitled to in the brutal medieval fantasy world.
+          It's again hard to get a  clear picture of the properties of this character, but there is a larger diversity in names and words in the Reddit text world, which includes Jon Snow-adjacent talk of dragons and using his' family name "Stark" which he is, as an illegitimate son, is not entitled to in the brutal medieval fantasy world.
           Such injustices could be the among the vocabulary details that the fans leave in fiction.
         </p>
           <div class="row" align="center">
@@ -415,7 +409,7 @@
       <p>
         What can we do with the above, weird mathematical abstraction where the rich text relating to each character is suddenly reduced to an arrow?
         Well, we can look what arrows are related!
-        For the book data, the arrows are divided beautifully into factions: When moving clock-wise, the first four are different cour personalitites, the next many are Lannisters, then the Baratheoons, then the Starks and Notheners.
+        For the book data, the arrows are divided beautifully into factions: When moving clock-wise, the first four are different court personalities, the next many are Lannisters, then the Baratheoons, then the Starks and Northeners.
         We then again support the idea that book co-mentions are contain much geographic and factional context.  Let's also note that, in this space, the rotten child king Joffrey is more of a Lannister than he is a Baratheon despite of his name - is a proposition that would not seem controversial to any viewer or reader.
         </p>
         <p>
