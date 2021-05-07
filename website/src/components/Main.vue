@@ -262,7 +262,7 @@
         The discussion realm is not bound by geographic limits and obvious character interactions; the fan discussions transcend the merely descriptive and find parallels in different storylines, possibly providing a counter argument to the Ben Harrison's point about the reader laziness in wordbuilding literature.
     </p>
     </div>
-    <h3>But what about all that text?</h3>
+    <h3>But what about all those words?</h3>
     <div align="left">
         <p>
             The above gave us some insight into differences between the social world created by the author and the one in the reader discussions.
@@ -275,52 +275,80 @@
         </div>
         <p>
             In order to determine if the characters are defined by the same words in the book compared to the subreddit, we start counting up the words that appear together with the names of the characters.
-
-            Let us release our inner worldbuilding nerds on these character word clouds.
+            Let us release our inner worldbuilding nerds on these character words and hope that our text data makes sense in a way we can qualitatively understand.
         </p>
         <div class="row" align="center">
             <div class="column" align="center">
-                <img class="crop-height" src="../assets/dany_TF_wordcloud.png" width=550>
+                <figure>
+                <img class="crop-height" src="../assets/dany_TF_wordcloud.png" style="width:80%">
+                <figcaption>
+                Words describing Daenerys in the Reddit discussions
+                </figcaption>
+                </figure>
             </div>
             <div class="column" align="center">
-                <img class="crop-height" src="../assets/dany_TF_book.png" width=550>
+                <figure>
+                <img class="crop-height" src="../assets/dany_TF_book.png" style="width:80%">
+                <figcaption>
+                Daenerys in the book
+                </figcaption>
+                </figure>
             </div>
         </div>
         <p>
-            On the left hand is the word cloud constructed from the reddit data and on the right hand side is the worldcloud from the book.
-            We do see some overlap in these word clouds; blood, dragon, lord, old, daenerys, tyrion. This might suggest that there are some overlap between
-            the fantasy universe from the book and the universe in the mind of the redditors - at least on how Daenerys is percieved. However,
-            we also see differences between the most frequent terms for Daenerys; season, love, aegon. Aegon is Daenerys brother and is potrayed in
-            the books as he will play a big role in the story. This has resulteted in a lot of debate about this character on the subreddit, but
-            his storyline in the book never progressed. In conclusion, the words that describe Daenarys in the books compared to the subreddit are
-            surprisingly similar which suggest that the fantasy universe intended by George R. R. Martin has latched on to its readers. Lets see if this
-            holds true for all characters.
+          These possibly defining words include quite a few general words that are not that unique to the Mother of Dragons, but some interesting overlap is seen with words such as blood, dragon, lord, old, Daenerys, Tyrion.
+          The Redditors might be adopting some of the word use of George R. R. Martin.
         </p>
-          <div class="row" align="center">
-            <div class="column" align="center">
-                <img class="crop-height" src="../assets/tywin_TF_wordcloud.png" width=550>
-            </div>
-            <div class="column" align="center">
-                <img class="crop-height" src="../assets/tywin_TF_book.png" width=550>
-            </div>
-        </div>
         <p>
-        On the left: Reddit data. On the right: Book data. Again, we see a lot of overlap between each of these word clouds. Most notably;
-        Tyrion, lord, father, Cersei, Jaime. The differences are; Aerys, love, Rhaegar, black. Again, we see a great overlap, but some even
-        more interesting differences. Aerys (also known as the mad king) is mentioned a lot on the subreddit, but has less focus in the books.
-        Arya and Tywin meet in tv-show but never in the book. This, might be why she is in the reddit wordcloud but not in the book cloud.
-        We still see a lot of overlap but some more noticeable differences. Will this hold true for the next character?
+            However, we also see differences between the most frequent terms for Daenerys such as season, love, Aegon.
+            Aegon is the name of another member of Dany's royal house who could be major contender to her claim to the throne but is mysteriously missing.
+
+            Such a minor character, but possibly game-changing, character is perfect material for discussing intricate theories about the future course of the plot.
         </p>
            <div class="row" align="center">
             <div class="column" align="center">
-                <img class="crop-height" src="../assets/jon_TF_wordcloud.png" width=550>
+                <figure>
+                <img class="crop-height" src="../assets/jon_TF_wordcloud.png" style="width:80%">
+                <figcaption>
+                Reddit words describing Jon Snow
+                </figcaption>
+                </figure>
             </div>
             <div class="column" align="center">
-                <img class="crop-height" src="../assets/jon_TF_book.png" width=550>
+                <figure>
+                <img class="crop-height" src="../assets/jon_TF_book.png" style="width:80%">
+                <figcaption>
+                Snow in the five books
+                </figcaption>
+                </figure>
+            </div>
+            </div>
+        <p>
+          It's again hard to get a  clear picture of the properties of this character, but there is a larger diversity in names and words in the Reddit text world, which includes Jon Snow-adjacent talk of dragons and using his' family name "Stark" which he is as a bastard is not entitled to in the brutal medieval fantasy world.
+          Such injustices could be the among the vocabulary details that the fans leave in fiction.
+        </p>
+          <div class="row" align="center">
+            <div class="column" align="center">
+                <figure>
+                <img class="crop-height" src="../assets/tywin_TF_wordcloud.png" style="width:80%">
+                <figcaption>
+                The Reddit discussions of Tywin Lannister
+                </figcaption>
+                </figure>
+
+            </div>
+            <div class="column" align="center">
+                <figure>
+                <img class="crop-height" src="../assets/tywin_TF_book.png" style="width:80%">
+                <figcaption>
+                Tywin as he appears in the books
+                </figcaption>
+                </figure>
             </div>
         </div>
         <p>
-        On the left: Reddit data. On the right: Book data. Jon
+        This old villain shows quite a few similarities including the names and words about his noble family: Tyrion, lord, father, Cersei, Jaime.
+        Aerys, the Mad King, is apparently often discussed along with Tywin by the fans, while this is rarer in the books, signifying that the fans dwell on interesting back stories such as the battle between Tywin and the Mad King, while the fantasy world itself moves on from the horrid wars.
         </p>
         </div >
         <div align="center">
