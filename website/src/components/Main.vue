@@ -358,8 +358,13 @@
         To see more of these, go to our <router-link to="/game">word cloud guessing game</router-link> and see whether the words used by redditors are enough for you to recognize the fictional character or if it really is a little random.
         </p>
         <p>
-         We end the word analysis by checking the defining words discussed about for their use during the story.
-         The mysterious Aegon, also the name of a historic person in the world, is used
+         We end the word analysis by checking the defining words discussed above for their use during the development of the story.
+         The mysterious Aegon, also the name of a historic person in the world, is used throughout the story with some pauses, while Dany's full first name that was very used on Reddit is not as frequently used in the books, except for in the end which also seems to contain more dragon action.
+         She is, for example, also adressed by the title "Khaleesi" (a form of steppe queen) - a word detail that is important for the characters inside the world but is, for a reader, only used as immersion and not nocessary when communicating.
+         </p>
+         <p>
+         Tywin Lannister's defining word "Aerys" from the Reddit discussions is much more rarely used than the generic and (in the patriarchal medieval-like society, all-important) defining word "father" extracted from the books.
+         This makes sense given the natural difference in the text domains; the redditor discussion are much more analytical and focused on knowledge compared to the personal experiences and dialogue of fantasy prose.
             </p>
         </div>
       <div align="center">
