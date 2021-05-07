@@ -9,7 +9,7 @@
         <animate attributeName="d" from="m410,110 h0" to="m410,110 h1100" dur="6.8s" begin="0s" repeatCount="indefinite" />
       </path>
       <text font-size="28" font-family="Montserrat">
-        <textPath xlink:href="#path">A song of Ice and Network Science!
+        <textPath xlink:href="#path">A Song of Ice and Network Science!
         </textPath>
       </text>
     </svg>
