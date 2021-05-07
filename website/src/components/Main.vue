@@ -4,17 +4,26 @@
      <div :style="{'backgroundImage':'../assets/back.jpg'}">
   </div>
     <h1>{{ msg }}</h1>
-    <p>
-        We charted interactions between characters in the world of <em>A Song of Ice and Fire</em> - both in the original books and in reader discussions.
-    </p>
-    <div class="bg" align="center" width=100% position="float">
+      <svg width="100%" viewBox="4 90 1250 77" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+      <path id="path">
+        <animate attributeName="d" from="m410,110 h0" to="m410,110 h1100" dur="6.8s" begin="0s" repeatCount="indefinite" />
+      </path>
+      <text font-size="28" font-family="Montserrat">
+        <textPath xlink:href="#path">A song of Ice and Network Science!
+        </textPath>
+      </text>
+    </svg>
+       <div class="bg" align="center" width=100% position="float">
       <a :href="require('../assets/back.jpg')" target="_blank">
             <img src="../assets/back.jpg" height=440 width=102%>
         </a>
       </div>
+<div align="center">
+  <blockquote>        We charted interactions between characters in the world of <em>A Song of Ice and Fire</em> - both in the original books and in reader discussions.
+</blockquote></div>
     <h3>What are we looking for?</h3>
     <div align="left">
-      <p>
+      <p class=content p:first-child:first-letter>
         <b>Worldbuilding</b>, the process of constructing imaginary universes, has intrigued audiences for as long as humanity has been telling stories. The detailed, gritty fantasy world of <em>A Song of Ice and Fire</em> (the book series on which Game of Thrones is based) is one of the most popular examples of this in the recent years.
       </p>
       <p>
@@ -29,19 +38,14 @@
       </p>
     </div>
 
-    <h3>Data!</h3>
-    <div align="left">
-      <p>
-        <ol>
-            <li>
-              <img src="https://media.vanityfair.com/photos/53235792932cac31720001be/master/w_2560%2Cc_limit/george-rr-martin.jpg" width=80>
-              The text for all five books in <em>A Song of Ice and Fire</em>: 7M words divided into 358 chapters.
-            </li>
-            <li>
-              <img src="https://i.imgur.com/sdO8tAw.png" width=80>
-              Scrape from 2015-2018 of 70K reddit posts from the book discussion subreddit (forum) <a href="https://www.reddit.com/r/asoiaf/" target="_blank"> /r/asoiaf </a> totalling 15M words.
-            </li>
-        </ol>
+    <h3>What data did we use?</h3>
+    <div align="center">
+      <div align="center">
+              <img src="https://media.vanityfair.com/photos/53235792932cac31720001be/master/w_2560%2Cc_limit/george-rr-martin.jpg" width=130>
+              </div>
+              <p><br>The text from all five books in <em>A Song of Ice and Fire</em>: 7M words divided into 358 chapters.</p>
+              <div align="center"> <img src="https://i.imgur.com/sdO8tAw.png" width=80></div>
+              <p>Web scrape from 2015-2018 of 70K reddit posts from the book discussion subreddit (forum) <a href="https://www.reddit.com/r/asoiaf/" target="_blank"> /r/asoiaf </a> totalling 15M words.
       </p>
       </div>
     <h3>Two Graphs of Thrones</h3>
@@ -527,5 +531,53 @@ th {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 790px;
+}
+h1 {
+    text-transform: capitalize;
+    font-size: 3.6rem;
+}
+h3 {
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+body{
+  margin:0;
+  width:100%;
+  height:100vh;
+  background-repeat: no-repeat;
+}
+svg{
+  width:50%;
+  height: 40%;
+}
+blockquote {
+  font-weight: 100;
+  font-size: 2rem;
+  max-width: 860px;
+  line-height: 1.4;
+  margin: 0;
+  padding: .5rem;
+}
+
+blockquote:before,
+blockquote:after {
+  position: absolute;
+  color: #f1efe6;
+  font-size: 8rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+blockquote:before {
+  content: '“';
+  left: -5rem;
+  top: -2rem;
+}
+
+blockquote:after {
+  content: '”';
+  right: -5rem;
+  bottom: 1rem;
 }
 </style>
