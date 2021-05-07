@@ -354,6 +354,9 @@
         This old villain shows quite a few similarities including the names and words about his noble family: Tyrion, lord, father, Cersei, Jaime.
         Aerys, the Mad King, is apparently often discussed along with Tywin by the fans, while this is rarer in the books, signifying that the fans dwell on interesting back stories such as the battle between Tywin and the Mad King, while the fantasy world itself moves on from the horrid wars.
         </p>
+        <p>
+        To see more of these, go to our <router-link to="/game">word cloud guessing game</router-link> and see whether the words used by redditors are enough for you to recognize the fictional character or if it really is a little random.
+        </p>
         </div >
         <div align="center">
              <h3>Dispersion plots </h3>
@@ -413,6 +416,7 @@
       Many of the words used by redditors to define Jon Snow are frequently used in the book. This, would to some extend confirm
       the hyphothesis that the redditors have adopted the language used in the books series a song of ice and fire.
     </p>
+    <h3> The character space </h3>
       <figure>
         <a :href="require('../assets/pca_book.png')" target="_blank">
             <img src="../assets/pca_book.png" width=900>
@@ -435,7 +439,7 @@
     <div align="left">
     <p>
         Now that we have seen which words describe characters and how characters can be put into different communities, we want to investigate
-        an even more important question: Who does Reddit have the hots for? Who does Reddit have it out for? Are Redditors - one of the most
+        an even more important question: Who does Reddit have the hots for? Who does Reddit have it out for? Does Reddit - one of the most
         opinionated platforms on the planet - have characters they seem to be neutral towards? It is time to find out with the illustration below,
         showing redditor sentiment, their attitude, for five interesting characters.
     </p>
@@ -445,17 +449,24 @@
     </div>
     <div align="left">
     <p>
-        Immediately, we notice that the text of some of the characters reach outside of the plot borders. A shame, but we have much more important
-        results to discuss! Firstly, we see that we finally have an answer to whether Joffrey or Ramsey is the most hated; Reddit answers a resounding
-        Ramsey. It definitely makes sense that both are scraping the bottom of the hate barrel based on their ruthless and vile behaviour. <b> MORE ABOUT
-        THE CHARACTERS</b>
+    The visualization shows, using the two axes, two different measurements of the fan opinion: The VADER method is made specifically for social media text while the dictionary based Hedometer measurements looks at each word independently.
     </p>
     <p>
-        Another quick point is that the VADER sentiment analysis actually gets widely different answers than the dictionary-based sentiment analysis. This
-        and much more can be examined in detail in our notebook tailor-made for this project. It contains all the code used to make
-        the plots and get the results you have been enjoying throughout this website. Come have a look, we look forward to being shamed for using try except
-        statements instead of handling errors like adults.
+        Immediately, we notice that the text of some of the characters reach outside of the plot borders. A shame, but we have much more important
+        results to discuss! Firstly, we see that we finally have an answer to whether the spoiled brat Joffrey or the mocking sadist Ramsay is the most hated; Reddit answers a resounding Ramsay, no matter which of the two measurements are used.
     </p>
+    <p>
+        Another quick point is that the VADER sentiment analysis actually gets widely different answers than the dictionary-based sentiment analysis.
+        This and many more details can studied in our notebook tailor-made for this project.
+        It contains all the code used to make the plots and get the results you have been enjoying throughout this website.
+        Come have a look, we look forward to being shamed for using try except statements instead of handling errors like adults.
+    </p>
+    </div>
+    <h3>What was it all about?</h3>
+    <div align="lefter">
+        <p>
+
+        </p>
     </div>
 </div>
 </template>

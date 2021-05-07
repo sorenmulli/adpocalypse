@@ -70,7 +70,7 @@ export default defineComponent({
         this.resultMsg = '🔥🐲 You got that one right! 🐲🔥'
         this.corrects++
       } else {
-        this.resultMsg = '❄️☠️ No, it was actually ' + this.rightAnswer + '. Keep it up, though! ☠️❄️'
+        this.resultMsg = '❄️☠️ No, it was actually ' + this.rightAnswer + '. Keep it up! ☠️❄️'
       }
       const rightIndex = this.options.indexOf(this.rightAnswer, 0)
       this.total++
