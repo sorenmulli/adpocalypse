@@ -18,7 +18,7 @@
         <b>Worldbuilding</b>, the process of constructing imaginary universes, has intrigued audiences for as long as humanity has been telling stories. The detailed, gritty fantasy world of <em>A Song of Ice and Fire</em> (the book series on which Game of Thrones is based) is one of the most popular examples of this in the recent years.
       </p>
       <p>
-          As worldbuilding, in our estimation, plays a growing part in popular literature and media, it is of interest to study how the readers relate to it - a relationship which American author John Harrison characterizes as negative, noting <q>Worldbuilding numbs the reader’s ability to fulfil their part of the bargain ...</q>, even suggesting that it might make us receptive to advertising and political rhetoric.
+          As worldbuilding, in our estimation, plays a growing role in popular literature and media, it is of interest to study how the readers relate to it - a relationship which American author John Harrison characterizes as negative, noting <q>Worldbuilding numbs the reader’s ability to fulfil their part of the bargain ...</q>, even suggesting that it might make us receptive to advertising and political rhetoric.
       (John Harrison: "Very Afraid", 2007, Online, Fetched 05/05-21 <a href="http://web.archive.org/web/20080410181840/http://uzwi.wordpress.com/2007/01/27/very-afraid" target="_blank">here</a>)
       </p>
       <p>
@@ -43,8 +43,12 @@
             </li>
         </ol>
       </p>
+      </div>
+    <h3>Two Graphs of Thrones</h3>
+    <div align="left">
       <p>
-        Now, let's <b>build a graph</b> for each of the two worlds of text!
+        Now, we have the main ingredients ready: Two different text data sets filled to the brim with fictional characters.
+        So, let's bake them into a nice stew by <b>building a social graph</b> for each of the two worlds of text!
       </p>
     </div>
     <div align="center">
@@ -69,7 +73,7 @@
     </div>
     <div align="left">
     <p>
-        Hey! There is definitely a difference between these two graphs.
+        Hey! There is definitely a difference between these two social worlds.
     </p>
     <p>
         Certain characters such as Jon Snow and Tyrion Lannister are much more prominent in the Reddit texts, while the characters that are more important early on in the story such as Ned Stark, Robb Stark and Robert Baratheon have faded more from the discussions.
@@ -79,14 +83,14 @@
         These are three characters that are spatially far away from eachother in most of the story, but might be much more adjacent in space of Reddit discussions dealing with possible endings, wild theories and favorite characters.
     </p>
     <p>
-       While interesting, we want to go beyond this qualitative zoom in on local graph differences and look for a way to <em>measure</em> what the difference is.
+       While interesting, the plots are pretty messy (even though we had to hide many weak links and lonely characters), so let us go beyond this qualitative zoom in on local graph differences and look for a way to <em>measure</em> what the difference is.
     </p>
     </div>
-    <h3>What is revealed?</h3>
+    <h3>What is going on in the two social worlds?</h3>
     <div align="left">
     <p>
-        The easiest numbers we can look at are the strengths of the links.
-        The average weight of links - how often the characters occur in same chapter of post - is, in the books, is 7% and varies about 8% away for this typical value.
+        The easiest numbers to look at are the strengths of the links.
+        The average weight of links - how often the characters occur in same chapter of post - is, in the books,  7% and is in average varies about 8% away from this typical value.
         For the reddit graph, these values are very different: 0.7% is the average strength and it varies typically 0.8%.
     </p>
     <p>
@@ -96,7 +100,7 @@
     <p>
         When we plot the proportions for the entire list of characters (Fig. 3), we realize why the means are so different:
         In the actual story, there are some characters that meet quite rarely, many sometimes see each or discuss other and some are together in most chapters, but the (green) line between these is mostly uniform.
-        In the discussions, however, most character pairs very rarely are discussed together with a small number of much more popular outliers such as Jon and Dany or Jon and Tyrion ... or Jon and Bran - you get the picture!
+        In the discussions, however, most character pairs very rarely are mentioned together apart from a small number of much more popular outliers such as Jon and Dany, or Jon and Tyrion, or Jon and Bran, or Jon and ... - you get the picture!
     </p>
     </div>
     <div align="center">
@@ -121,6 +125,7 @@
     </p>
     </div>
 
+    <h3>It's good to have cliques in a dragon world </h3>
     <div align="left">
     <p>
         To get a clearer picture of how the two graphs really differ, <b>the communities</b> of the two graphs are found by answering the question:
@@ -153,14 +158,14 @@
         This community includes many people that at different points in the stories protect both of the daughters, thus revealing how connected the stories of these two daughters are, even though they are no geographically close all through the story.
     </p>
     <p>
-        When we compare these partitions with the factions (families, political groups) in the fantasy world, it is seen that the book graph has highest correspondence, showing that the readers consider Amore than just geography and family when discussing the story.
-        This comparison can be seen in the colours in the partitions and charted in the tables below.
+        When we compare these partitions with the factions (families, political groups) in the fantasy world, it is seen that the book graph has highest correspondence, showing that the readers consider more than just geography and family when discussing the story.
+        This faction grouping can be seen in the colours in the partitions and charted in the tables below.
     </p>
     <div align="center">
      <table>
-     <caption>Tab. 1 - Communities found from the book chapters</caption>
+     <caption>Tab. 1 - Communities found from the book chapter graph</caption>
         <tr>
-            <th>Community</th>
+            <th>Book Community</th>
             <th>Baratheon</th>
             <th>Tyrell</th>
             <th>Stark</th>
@@ -205,9 +210,9 @@
         </tr>
      </table>
      <table>
-        <caption>Tab. 2 - Communities found from the Reddit posts</caption>
+        <caption>Tab. 2 - Communities found from the Reddit post graph</caption>
         <tr>
-            <th>Community</th>
+            <th>Reddit Community</th>
             <th>Baratheon</th>
             <th>Tyrell</th>
             <th>Stark</th>
@@ -257,11 +262,11 @@
         The discussion realm is not bound by geographic limits and obvious character interactions; the fan discussions transcend the merely descriptive and find parallels in different storylines, possibly providing a counter argument to the Ben Harrison's point about the reader laziness in wordbuilding literature.
     </p>
     </div>
-
+    <h3>But what about all that text?</h3>
     <div align="left">
         <p>
             The above gave us some insight into differences between the social world created by the author and the one in the reader discussions.
-            But, to understand more differences than the social ones, we need to <b>consider more of the text</b> than just whether two characters appear together.
+            But, to find more differences than social links, we need to <b>consider more of the text</b> than just whether two characters appear together.
         </p>
           <div align="center" class=bg1 width=100% position="float">
         <a :href="require('../assets/bogen.png')" target="_blank">
@@ -269,28 +274,9 @@
           </a>
         </div>
         <p>
-            In order to determine if the characters are defined by the same words in the book compared to the subreddit several approaches
-            to this can be taken. In the following three different characters will be analyzed to show some of the differences from the subreddit
-            and the books. For the rest of the characters worldclouds can be found in the notebook or in our game section. To understand the three characters
-            more deeply, we will look into four things:<br><br> Term frequency (TF), term frequency - inverse document frequency
-            (TF-IDF), word clouds as well as the lexical dispersion of words from reddit in the book series. <br>
-            <br>
-            <b>Term frequency</b> <br> Term-frequencies cannot capture whether the term in a deeper sense characterizes the specific character, that is; is
-             the frequency high because the term is especially important to the character or because it is just commonly used?
-             Such as the terms <em> lord </em> and <em> ser </em> from the books. When counting occurences this interesting difference is not revealed.<br>
-             <br>
-             <b>Term Frequency - Inverse Document Frequency</b>
-             <br> So, what is the difference bettwen TF and TF-IDF? The inverse document frequency is mathematically defined as
-             as a logarithmically scaled inverse fraction of documents containg the word, such that only the relative scaling is of importance.
-             The TF-IDF words are much more descriptive, as they contain more unique information about characters such as jokes about the sentiment towards the
-             character and special names of people related to the character. Thus, this will allow to find more descriptive words of of the characters from the
-             point of redditors and the book series respectively. This descriptiveness comes from the specificity that gives extra weight to terms that occur
-             rarely in the corpus and thus, understood informally, carries more information about this particular document.<br>
-             <br>
-             <b>Word Cloud</b>
-             <br> Word clouds are visual representations of text. In the case of this project we've used Word Clouds to illustrate
-              the most frequest words specified to each character in Game of Thrones both from reddit and from the books.
-              The following three word clouds represents Daenerys Targaryen, Tywin Lannister and Jon Snow.
+            In order to determine if the characters are defined by the same words in the book compared to the subreddit, we start counting up the words that appear together with the names of the characters.
+
+            Let us release our inner worldbuilding nerds on these character word clouds.
         </p>
         <div class="row" align="center">
             <div class="column" align="center">
@@ -471,7 +457,7 @@ tr:nth-child(odd) {
 }
 th {
   color: white;
-  background-color: black;
+  background-color: grey;
 }
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {

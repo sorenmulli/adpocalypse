@@ -49,6 +49,7 @@ export default {
   }
 }
 p {
+  line-height:1.5em;
   margin: 14px 20% 14px 20%;
 }
 a {
